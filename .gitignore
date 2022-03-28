@@ -1,0 +1,10 @@
+node_modules
+gets
+dist
+build
+.parcel-cache
+.idea
+.vscode
+._*
+
+yarn-error.log
