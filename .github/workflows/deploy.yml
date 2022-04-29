@@ -21,17 +21,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Setup Node
-        uses: actions/setup-node@v2-beta
-        with:
-          node-version: "14"
-
-      - name: Install packages
-        run: yarn install
-
-      - name: Export the site
-        run: yarn build
-
       - name: Deploy Build Folder
         uses: burnett01/rsync-deployments@4.1
         with:
