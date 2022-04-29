@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Install Dependencies
+        run: npm install
+
       - name: Export the site
         run: npm run build
 
