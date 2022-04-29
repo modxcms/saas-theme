@@ -27,6 +27,8 @@ jobs:
           node-version: '14'
           cache: 'yarn'
 
+      - run: npm i -g corepack
+
       - name: Install packages
         run: yarn install
 
