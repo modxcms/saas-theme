@@ -2,6 +2,8 @@ node_modules
 gets
 dist
 build
+!build/build
+!build/static
 .parcel-cache
 .idea
 .vscode
