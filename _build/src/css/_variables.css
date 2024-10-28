@@ -1,0 +1,35 @@
+:root {
+        --bs-primary: #265782;
+        --bs-primary-rgb: 38, 87, 130;
+        --bs-primary-dark: #1c4f7d;
+        --bs-secondary: #868e96;
+        --bs-secondary-rgb: 134, 142, 150;
+        --bs-success: #28a745;
+        --bs-success-rgb: 40, 167, 69;
+        --bs-info: #17a2b8;
+        --bs-info-rgb: 23, 162, 184;
+        --bs-warning: #ffc107;
+        --bs-warning-rgb: 255, 193, 7;
+        --bs-danger: #dc3545;
+        --bs-danger-rgb: 220, 53, 69;
+        --bs-light: #f7f8fb;
+        --bs-ligth-rgb: 247, 248, 251;
+        --bs-dark: #2f3b49;
+        --bs-dark-rgb: 47, 59, 73;
+        --bs-gray: #adb5bd;
+        --bs-gray-rgb: 173, 181, 189;
+
+        --bs-link-color: var(--bs-primary);
+        --bs-link-hover-color: var(--bs-primary-dark);
+}
+.btn {
+        text-decoration: none;
+        &:hover, &:focus {
+                text-decoration: none;
+        }
+}
+.btn-primary {
+        --bs-btn-bg: var(--bs-primary);
+        --bs-btn-border-color: var(--bs-primary);
+        --bs-btn-hover-bg: var(--bs-primary-dark);
+}

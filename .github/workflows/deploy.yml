@@ -4,10 +4,10 @@ name: Deploy
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - master
+#  push:
+#    branches:
+#      - main
+#      - master
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,13 +19,13 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - uses: bahmutov/npm-install@HEAD
-      - run: yarn install
-      - run: yarn build
+      - run: npm install
+      - run: npm run build
 
       - name: Deploy Build Folder
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avz --exclude "*.html" --exclude "*.icloud" --delete
           path: build/build/
@@ -35,7 +35,7 @@ jobs:
           remote_key: ${{ secrets.DEPLOY_KEY }}
 
       - name: Deploy Static Folder
-        uses: burnett01/rsync-deployments@4.1
+        uses: burnett01/rsync-deployments@7.0.1
         with:
           switches: -avz --exclude "*.html" --exclude "*.icloud" --delete
           path: build/static/
