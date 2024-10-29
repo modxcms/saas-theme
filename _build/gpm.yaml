@@ -1,0 +1,157 @@
+name: SaaS
+version: 0.0.1
+description: Software as a Service (SaaS) application theme.
+author: matdave
+namespace: SaaS
+
+categories:
+  -
+    name: Fred
+  -
+    name: Blog
+  -
+    name: Forms
+  -
+    name: Navigation
+
+templates:
+  -
+    name: Saas Blog Post
+    category: Fred
+    file: fred/blog-post.html
+
+  - name: Saas Blog Home
+    category: Fred
+    file: fred/blog-home.html
+
+  -
+    name: SaaS Main
+    category: Fred
+    file: fred/main.html
+
+  - name: SaaS Custom Landing
+    file: landing.html
+
+chunks:
+  -
+    name: saas-footer
+    file: footer.tpl
+
+  -
+    name: saas-navigation
+    file: navigation.tpl
+
+  -
+    name: saas-head
+    file: head.tpl
+
+  -
+    name: saas-blog-featured-item
+    category: Blog
+    file: blog/featured-item.tpl
+
+  -
+    name: saas-blog-item
+    category: Blog
+    file: blog/item.tpl
+
+  -
+    name: saas-blog-sidebar-item
+    category: Blog
+    file: blog/sidebar-item.tpl
+
+  -
+    name: saas-form-beacon
+    category: Forms
+    file: form/beacon.tpl
+
+  -
+    name: saas-form-demo
+    category: Forms
+    file: form/demo.tpl
+
+  -
+    name: saas-nav-footer-inner
+    category: Navigation
+    file: navigation/footer-inner.tpl
+
+  -
+    name: saas-nav-footer-outer
+    category: Navigation
+    file: navigation/footer-outer.tpl
+
+  -
+    name: saas-nav-footer-row
+    category: Navigation
+    file: navigation/footer-row.tpl
+
+  -
+    name: saas-nav-footer-row-container
+    category: Navigation
+    file: navigation/footer-row-container.tpl
+
+  -
+    name: saas-nav-footer-row-inner
+    category: Navigation
+    file: navigation/footer-row-inner.tpl
+
+  -
+    name: saas-nav-main-inner
+    category: Navigation
+    file: navigation/main-inner.tpl
+
+  -
+    name: saas-nav-main-outer
+    category: Navigation
+    file: navigation/main-outer.tpl
+
+  -
+    name: saas-nav-main-row
+    category: Navigation
+    file: navigation/main-row.tpl
+
+tvs:
+  -
+    name: saas-blog-featured
+    category: Blog
+    type: checkbox
+    caption: Featured
+    inputOptionValues: Yes==1
+    templates:
+      - Saas Blog Post
+    properties:
+      -
+        name: fred
+        value: '1'
+        type: combo-boolean
+      -
+        name: fred.type
+        value: toggle
+
+  -
+    name: saas-blog-image
+    category: Blog
+    type: image
+    caption: Image
+    templates:
+      - Saas Blog Post
+
+    properties:
+      -
+        name: fred
+        value: '1'
+        type: combo-boolean
+      -
+        name: fred.type
+        value: image
+      -
+        name: fred.mediaSource
+        value: Assets
+
+  -
+    name: saas-blog-sidebar
+    category: Blog
+    type: freddropzone
+    caption: Sidebar
+    defaultValue: @INHERIT
+

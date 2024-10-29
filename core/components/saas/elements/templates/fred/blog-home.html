@@ -1,0 +1,59 @@
+[[$sass-head]]
+[[$sass-navigation]]
+<main>
+    <div class="py-5 bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col mb-sm-4">
+                    <h1 class="fw-light">Blog</h1>
+                </div>
+                <div class="col-md-4">
+                    <form>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search Blog">
+                            <button class="btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col pr-md-5">
+                    [[!getPage@Blog?
+                        &elementClass=`modSnippet`
+                        &element=`getResources`
+                        &prepareTVs=`1`
+                        &includeTVs=`1`
+                        &includeTVList=`saas-page-featured-image`
+                        &parents=`5`
+                        &tpl=`saas-blog-item`
+                        &limit=`4`
+                    ]]
+                    <nav class="row mb-5">
+                        [[!+page.nav]]
+                    </nav>
+                </div>
+                <div class="col-md-4 pl-md-5" data-fred-dropzone="saas-blog-sidebar" data-fred-target="saas-blog-sidebar" style="min-height: 500px;">
+                    [[*saas-blog-sidebar]]
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="py-5 bg-primary text-white">
+        <div class="container">
+            <h1 class="fw-light text-center py-4">Popular Posts</h1>
+            <div class="row py-4">
+                [[getResources?
+                    &parents=`[[*id]]`
+                    &depth=`1`
+                    &tpl=`saas-blog-featured-item`
+                    &limit=`[[++saas.setting.blog_show]]`
+                    &tvFilters=`saas-blog-featured==1`
+                ]]
+            </div>
+        </div>
+    </div>
+</main>
+[[$sass-footer]]

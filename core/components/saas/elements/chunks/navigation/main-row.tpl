@@ -1,0 +1,1 @@
+<li[[+wf.id]] class="[[+wf.classnames]]" [[+wf.attributes]]><a href="[[+wf.link]]" title="[[+wf.title]]" class="nav-link">[[+wf.linktext]]</a>[[+wf.wrapper]]</li>

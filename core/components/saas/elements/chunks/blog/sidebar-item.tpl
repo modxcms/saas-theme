@@ -1,0 +1,1 @@
+<p><a class="text-primary" href="[[~[[+id]]]]">[[+pagetitle]]</a></p>
