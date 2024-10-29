@@ -1,0 +1,43 @@
+{
+  "settings": [
+    {
+      "name": "position",
+      "label": "Position",
+      "type": "select",
+      "options": {
+        "offset-sm-1": "Left",
+        "offset-md-3 offset-sm-1 text-center": "Center",
+        "offset-md-6 offset-sm-1": "Right"
+      }
+    },
+    {
+      "name": "text",
+      "label": "Text Color",
+      "type": "select",
+      "options": {
+        "text-black": "Black",
+        "text-dark": "Dark",
+        "text-light": "Light",
+        "text-white": "White"
+      },
+      "value": "text-dark"
+    },
+    {
+      "name": "attr",
+      "label": "Show Attribution",
+      "type": "toggle",
+      "value": true
+    },
+    {
+      "name": "oversize",
+      "label": "Oversize Quote",
+      "type": "toggle",
+      "value": false
+    },
+    {
+      "name": "background",
+      "label": "Background",
+      "type": "image"
+    }
+  ]
+}

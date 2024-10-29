@@ -1,0 +1,13 @@
+{
+  "settings": [
+    {
+      "name": "padding",
+      "label": "Padding",
+      "type": "toggle",
+      "value": true
+    },
+    {
+      "fred-import": "option-style"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "style",
+  "label": "Style",
+  "type": "select",
+  "options": {
+    "bg-primary text-white": "Primary (text white)",
+    "bg-primary text-dark": "Primary (text dark)",
+    "bg-dark text-white": "Dark",
+    "bg-light": "Light",
+    "bg-white": "White"
+  },
+  "value": "bg-dark text-white"
+}

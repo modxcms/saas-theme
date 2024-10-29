@@ -1,0 +1,7 @@
+{
+  "theme": "inlite",
+  "inline": true,
+  "plugins": "modxlink contextmenu code",
+  "selection_toolbar": "bold italic | modxlink | code",
+  "valid_elements": "a[href|target|class],br,strong,em"
+}

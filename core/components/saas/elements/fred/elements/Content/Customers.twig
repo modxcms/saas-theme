@@ -1,0 +1,12 @@
+<div class="py-5 bg-light">
+    <div class="container mb-4">
+        <h6 class="text-center text-dark fw-light" data-fred-name="title">Customers who use us</h6>
+        <div class="row mt-5 text-center">
+            {% for c in 0..(customers - 1) %}
+                <div class="col-lg col-md-6 mb-5">
+                    <span class="p-4 bg-gray text-white text-uppercase" data-fred-name="customer-{{c}}"> Company Logo </span>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div class="my-5 py-5 bg-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <img class="img-fluid" src="assets/img/map@2x.png" data-fred-name="image" data-fred-attrs="alt">
+            </div>
+            <div class="col-md-6 px-5">
+                <h1 class="font-weight-light text-primary" data-fred-name="title">Contact Us</h1>
+                <p class="lead" data-fred-name="lead">We would love to here from you</p>
+                <div class="row text-primary lead mb-3">
+                    <div class="col-1">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="col"> [[++saas.settingcompany_phone]] [[++saas.settingcompany_phone_extension:ne=``:then=`ex [[++saas.settingcompany_phone_extension]]`]] </div>
+                </div>
+                <div class="row text-primary lead mb-3">
+                    <div class="col-1">
+                        <i class="fa fa-envelope"></i>
+                    </div>
+                    <div class="col"> [[++saas.settingemailsender]] </div>
+                </div>
+                <div class="row text-primary lead mb-5">
+                    <div class="col-1">
+                        <i class="fa fa-map-marker"></i>
+                    </div>
+                    <div class="col"> [[++saas.settingcompany_address:nl2br]]</div>
+                </div>
+                <div class="row lead">
+                    [[++saas.settingsocial_li:ne=``:then=`
+                    <a class="text-gray mr-2 col" href="[[++saas.settingsocial_li]]"><i class="fab fa-2x fa-linkedin"></i></a>
+                    `]]
+                    [[++saas.settingsocial_in:ne=``:then=`
+                    <a class="text-gray mr-2 col" href="[[++saas.settingsocial_in]]"><i class="fab fa-2x fa-instagram"></i></a>
+                    `]]
+                    [[++saas.settingsocial_fa:ne=``:then=`
+                    <a class="text-gray mr-2 col" href="[[++saas.settingsocial_fa]]"><i class="fab fa-2x fa-facebook-square"></i></a>
+                    `]]
+                    [[++saas.settingsocial_tw:ne=``:then=`
+                    <a class="text-gray mr-2 col" href="[[++saas.settingsocial_tw]]"><i class="fab fa-2x fa-twitter-square"></i></a>
+                    `]]
+                    [[++saas.settingsocial_yt:ne=``:then=`
+                    <a class="text-gray mr-2 col" href="[[++saas.settingsocial_yt]]"><i class="fab fa-2x fa-youtube-square"></i></a>
+                    `]]
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

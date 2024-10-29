@@ -1,0 +1,12 @@
+{
+  "settings": [
+    {
+      "name": "customers",
+      "label": "Customers to Show",
+      "type": "slider",
+      "value": 4,
+      "min": 1,
+      "max": 6
+    }
+  ]
+}

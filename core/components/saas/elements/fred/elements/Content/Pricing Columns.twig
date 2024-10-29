@@ -1,0 +1,26 @@
+{% set colClass = (columns ? 12 / columns : 12) %}
+<div class="py-4 bg-dark text-white">
+    <div class="container">
+        <div class="row justify-content-center">
+            {% for c in 0..(columns - 1) %}
+                <div class="col-lg-{{colClass}} col-md-12 my-5">
+                    <div class="card text-dark">
+                        {% if c == (feature - 1) %} <div class="bg-primary text-uppercase font-weight-bold text-white p-3 text-center" id="most-popular" data-fred-name="popular-{{c}}">Most Popular</div> {% endif %}
+                        <h2 class="font-weight-light text-primary text-center my-5 text-uppercase text-spaced" data-fred-name="title-{{c}}">Small</h2>
+                        <h1 class="display-4 text-center font-weight-bold"><span data-fred-name="amount-{{c}}">$10</span> <small class="font-weight-light text-gray h3" data-fred-name="period-{{c}}">per month</small></h1>
+                        <hr class="mx-4">
+                        <ul class="text-muted star-bullets px-5 mx-auto mb-0" data-fred-name="features-{{c}}" data-fred-rte=true data-fred-rte-config="list">
+                            <li>Feature one</li>
+                            <li>Feature two here</li>
+                            <li>Feature the third</li>
+                            <li>Feature the fourth</li>
+                            <li>Feature number five</li>
+                        </ul>
+                        <hr class="mx-4 mb-5">
+                        <div data-fred-name="link-{{c}}" data-fred-rte=true data-fred-rte-config="cta" class="text-center"><a class="btn btn-primary text-white font-weight-light mx-auto border-overlap" href="#">Sign me up</a></div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
