@@ -1,0 +1,190 @@
+[
+  {
+    "group": "Company",
+    "settings": [
+      {
+        "name": "site_name",
+        "label": "Company Name",
+        "global": false
+      },
+      {
+        "name": "contact_email",
+        "label": "Contact Email",
+        "global": false
+      },
+      {
+        "name": "contact_phone",
+        "label": "Contact Phone",
+        "global": false
+      },
+      {
+        "name": "contact_phone_ext",
+        "label": "Contact Phone Extension",
+        "global": false
+      },
+      {
+        "name": "contact_address",
+        "label": "Contact Address",
+        "type": "textarea",
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "Site",
+    "settings": [
+      {
+        "name": "blog_show",
+        "label": "Blog Article Count",
+        "type": "slider",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "value": 3,
+        "global": false
+      },
+      {
+        "name": "blog_resource",
+        "label": "Blog Resource",
+        "type": "page",
+        "global": false
+      },
+      {
+        "name": "logo_light",
+        "label": "Light Logo",
+        "type": "image",
+        "global": false
+      },
+      {
+        "name": "logo_dark",
+        "label": "Dark Logo",
+        "type": "image",
+        "global": false
+      },
+      {
+        "name": "logo_width",
+        "label": "Logo Width",
+        "global": false
+      },
+      {
+        "name": "logo_height",
+        "label": "Logo Height",
+        "global": false
+      },
+      {
+        "name": "show_company",
+        "label": "Show Company Name Next to Logo",
+        "type": "toggle",
+        "value": true,
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "Social",
+    "settings": [
+      {
+        "name": "social_fa",
+        "label": "Facebook URL",
+        "global": false
+      },
+      {
+        "name": "social_tw",
+        "label": "Twitter/X URL",
+        "global": false
+      },
+      {
+        "name": "social_li",
+        "label": "LinkedIn URL",
+        "global": false
+      },
+      {
+        "name": "social_in",
+        "label": "Instagram URL",
+        "global": false
+      },
+      {
+        "name": "social_yt",
+        "label": "YouTube URL",
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "Colors",
+    "settings": [
+      {
+        "name": "color_primary",
+        "label": "Primary Color",
+        "type": "colorpicker",
+        "value": "#265782",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_secondary",
+        "label": "Secondary Color",
+        "type": "colorpicker",
+        "value": "#868e96",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_success",
+        "label": "Success Color",
+        "type": "colorpicker",
+        "value": "#28a745",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_info",
+        "label": "Info Color",
+        "type": "colorpicker",
+        "value": "#17a2b8",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_warning",
+        "label": "Warning Color",
+        "type": "colorpicker",
+        "value": "#ffc107",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_danger",
+        "label": "Danger Color",
+        "type": "colorpicker",
+        "value": "#dc3545",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_light",
+        "label": "Light Color",
+        "type": "colorpicker",
+        "value": "#f7f8fb",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_dark",
+        "label": "Dark Color",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_gray",
+        "label": "Gray Color",
+        "type": "colorpicker",
+        "value": "#adb5bd",
+        "showAlpha": false,
+        "global": false
+      }
+    ]
+  }
+]

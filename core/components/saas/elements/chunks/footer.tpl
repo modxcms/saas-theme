@@ -7,13 +7,13 @@
             <div class="col-md-2 pb-md-5 pt-5">
                 <p class="mx-2 h5 text-uppercase fw-bolder text-md-start text-center">
                     [[++saas.setting.logo_dark:ne=``:then=`
-                        <img src="[[++logo_dark]]" width="30" height="30" alt="[[++site_name]]">
+                        <img src="[[++logo_dark]]" width="30" height="30" alt="[[++saas.setting.site_name]]">
                     `:else=`
                         [[++saas.setting.logo_light:ne=``:then=`
-                            <img src="[[++logo_light]]" width="30" height="30" alt="[[++site_name]]">
+                            <img src="[[++logo_light]]" width="30" height="30" alt="[[++saas.setting.site_name]]">
                         `]]
                     `]]
-                    [[++saas.setting.show_company:ne=``:then=`[[++site_name]]`]]
+                    [[++saas.setting.show_company:ne=``:then=`[[++saas.setting.site_name]]`]]
                 </p>
             </div>
 
@@ -70,8 +70,7 @@
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
-<script src="[[!getLatestFile?option=`js`]]" defer></script>
-
+<script src="[[++saas.theme_dir]]web/saas.min.js?lit=[[++saas.lit]]" defer></script>
 </body>
 
 </html>

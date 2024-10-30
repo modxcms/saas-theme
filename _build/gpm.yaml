@@ -91,6 +91,10 @@ chunks:
         name: saas-nav-main-row
         category: Navigation
         file: navigation/main-row.tpl
+snippets:
+    -
+        name: saasToRGB
+        file: saasToRGB.php
 tvs:
     -
         name: saas-blog-featured
@@ -169,7 +173,7 @@ fred:
             templates:
                 - 'SaaS Main'
                 - 'Saas Blog Post'
-            uuid: ab2de45d-fef0-4c2a-adbe-9cb9e9284d23
+            uuid: 87bed3b7-ba73-4bac-86d9-9d5f4664398d
         -
             name: Forms
             templates:
@@ -180,5 +184,77 @@ fred:
             templates:
                 - 'Saas Blog Home'
             uuid: 2638aaf1-ab8d-4fa4-ad3c-9d5d51e19ed3
+    elements:
+        -
+            name: Benefits
+            category: Content
+            uuid: 999aa74d-6e53-4f88-acb6-9d5f445fdfc6
+        -
+            name: Contact
+            category: Content
+            uuid: a0ffe346-57fd-4294-b511-9d5f445fe3aa
+        -
+            name: Customers
+            category: Content
+            uuid: 22dd6046-b29c-49b2-b1ce-9d5f445fe48c
+        -
+            name: 'Font Awesome Grid'
+            category: Content
+            uuid: 59754b6b-d47b-43be-ae3e-9d5f445fe54b
+        -
+            name: 'Horizontal Rule'
+            category: Content
+            uuid: 99b15f2a-6f9b-4e8c-a82f-9d5f445fe5f3
+        -
+            name: 'Large Image'
+            category: Content
+            uuid: 4c067832-f0b5-4cfe-8427-9d5f445fe6a5
+        -
+            name: 'Pricing Columns'
+            category: Content
+            uuid: 3d518413-c63c-4db2-a9ea-9d5f445fe741
+        -
+            name: 'Quote Box'
+            category: Content
+            uuid: 54a4736e-6b0f-4d80-aa43-9d5f445fe7dc
+        -
+            name: 'Read More'
+            category: Content
+            uuid: e5fe32c7-f0fc-4d7a-a539-9d5f445fe89a
+        -
+            name: 'Rich Text Columns'
+            category: Content
+            uuid: d4817e56-488c-4445-b9e1-9d5f445fe957
+        -
+            name: 'Interior Header'
+            category: Headers
+            uuid: 7ee2410b-d781-45ae-8e25-9d5f48ae92f0
+        -
+            name: 'Product Hook'
+            category: Headers
+            uuid: d2605193-607f-4f8d-aa02-9d5f48ae96a8
+        -
+            name: 'Action Block'
+            category: Sidebar
+            uuid: 0ea5895d-2454-4f38-b5c2-9d5f48ae976d
+        -
+            name: 'Recent Articles'
+            category: Sidebar
+            uuid: 5148fc47-3315-487a-bee5-9d5f48ae981e
+    rteConfigs:
+        -
+            name: TinyMCE
+            description: ''
+        -
+            name: cta
+            description: ''
+        -
+            name: list
+            description: ''
+    optionSets:
+        -
+            name: option-style
+            description: ''
+            complete: false
     theme:
         uuid: 6cd24798-f105-4372-934c-9d5d51e190a9
