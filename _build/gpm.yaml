@@ -154,6 +154,13 @@ systemSettings:
 build:
     scriptsAfter:
         - lit.gpm.php
+        - seosuite.gpm.php
+    requires:
+        "seo suite": ">3.0.0"
+        fred: ">3.1.0"
+        wayfinder: ">2.0.0"
+        getpage: ">1.0.0"
+        getresources: ">1.0.0"
 fred:
     templates:
         -

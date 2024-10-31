@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="[[++saas.theme_dir]]web/saas.css?lit=[[++saas.lit]]" />
     <style>
         :root {
-            --bs-gray: [[++saas.setting.color_gray]];
             --bs-primary: [[++saas.setting.color_primary]];
             --bs-secondary: [[++saas.setting.color_secondary]];
             --bs-success: [[++saas.setting.color_success]];
@@ -19,7 +18,6 @@
             --bs-danger: [[++saas.setting.color_danger]];
             --bs-light: [[++saas.setting.color_light]];
             --bs-dark: [[++saas.setting.color_dark]];
-            --bs-gray-rgb: [[++saas.setting.color_gray:saasToRGB]];
             --bs-primary-rgb: [[++saas.setting.color_primary:saasToRGB]];
             --bs-secondary-rgb: [[++saas.setting.color_secondary:saasToRGB]];
             --bs-success-rgb: [[++saas.setting.color_success:saasToRGB]];

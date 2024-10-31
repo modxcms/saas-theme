@@ -176,14 +176,6 @@
         "value": "#2f3b49",
         "showAlpha": false,
         "global": false
-      },
-      {
-        "name": "color_gray",
-        "label": "Gray Color",
-        "type": "colorpicker",
-        "value": "#adb5bd",
-        "showAlpha": false,
-        "global": false
       }
     ]
   }
