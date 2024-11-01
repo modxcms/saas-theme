@@ -95,6 +95,9 @@ snippets:
     -
         name: saasToRGB
         file: saasToRGB.php
+    -
+        name: saasDarken
+        file: saasDarken.php
 tvs:
     -
         name: saas-blog-featured
@@ -161,6 +164,7 @@ build:
         wayfinder: ">2.0.0"
         getpage: ">1.0.0"
         getresources: ">1.0.0"
+        collections: ">4.0.0"
 fred:
     templates:
         -

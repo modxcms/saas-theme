@@ -1,2 +1,2 @@
-import * as bootstrap from 'bootstrap';
-import '@fortawesome/fontawesome-free/js/all';
+import 'bootstrap';
+import '@fortawesome/fontawesome-free/css/all.css';

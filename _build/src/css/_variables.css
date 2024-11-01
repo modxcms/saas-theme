@@ -4,20 +4,28 @@
         --bs-primary-dark: #1c4f7d;
         --bs-secondary: #868e96;
         --bs-secondary-rgb: 134, 142, 150;
+        --bs-secondary-dark: #727b84;
         --bs-success: #28a745;
         --bs-success-rgb: 40, 167, 69;
+        --bs-success-dark: #218838;
         --bs-info: #17a2b8;
         --bs-info-rgb: 23, 162, 184;
+        --bs-info-dark: #138496;
         --bs-warning: #ffc107;
         --bs-warning-rgb: 255, 193, 7;
+        --bs-warning-dark: #d39e00;
         --bs-danger: #dc3545;
         --bs-danger-rgb: 220, 53, 69;
+        --bs-danger-dark: #c82333;
         --bs-light: #f7f8fb;
         --bs-ligth-rgb: 247, 248, 251;
+        --bs-light-dark: #e9ecef;
         --bs-dark: #2f3b49;
         --bs-dark-rgb: 47, 59, 73;
+        --bs-dark-dark: #222b35;
         --bs-gray: #adb5bd;
         --bs-gray-rgb: 173, 181, 189;
+        --bs-gray-dark: #919ca6;
 
         --bs-link-color: var(--bs-primary);
         --bs-link-hover-color: var(--bs-primary-dark);
@@ -32,4 +40,44 @@
         --bs-btn-bg: var(--bs-primary);
         --bs-btn-border-color: var(--bs-primary);
         --bs-btn-hover-bg: var(--bs-primary-dark);
+}
+.btn-secondary {
+        --bs-btn-bg: var(--bs-secondary);
+        --bs-btn-border-color: var(--bs-secondary);
+        --bs-btn-hover-bg: var(--bs-secondary-dark);
+}
+.btn-success {
+        --bs-btn-bg: var(--bs-success);
+        --bs-btn-border-color: var(--bs-success);
+        --bs-btn-hover-bg: var(--bs-success-dark);
+}
+.btn-info {
+        --bs-btn-bg: var(--bs-info);
+        --bs-btn-border-color: var(--bs-info);
+        --bs-btn-hover-bg: var(--bs-info-dark);
+}
+.btn-warning {
+        --bs-btn-bg: var(--bs-warning);
+        --bs-btn-border-color: var(--bs-warning);
+        --bs-btn-hover-bg: var(--bs-warning-dark);
+}
+.btn-danger {
+        --bs-btn-bg: var(--bs-danger);
+        --bs-btn-border-color: var(--bs-danger);
+        --bs-btn-hover-bg: var(--bs-danger-dark);
+}
+.btn-light {
+        --bs-btn-bg: var(--bs-light);
+        --bs-btn-border-color: var(--bs-light);
+        --bs-btn-hover-bg: var(--bs-light-dark);
+}
+.btn-dark {
+        --bs-btn-bg: var(--bs-dark);
+        --bs-btn-border-color: var(--bs-dark);
+        --bs-btn-hover-bg: var(--bs-dark-dark);
+}
+.btn-gray {
+        --bs-btn-bg: var(--bs-gray);
+        --bs-btn-border-color: var(--bs-gray);
+        --bs-btn-hover-bg: var(--bs-gray-dark);
 }

@@ -2,9 +2,9 @@
     <div class="container">
         <a class="navbar-brand nav-item mx-2 h5 text-uppercase fw-bolder" href="[[~1]]">
             [[++saas.setting.logo_light:ne=``:then=`
-            <img src="[[++saas.setting.logo_light]]" width="30" height="30" alt="[[++saas.setting.site_name]]">
+            <img src="[[++saas.setting.logo_light]]" width="[[++saas.setting.logo_width:default=`30`]]" height="[[++saas.setting.logo_height:default=`30`]]" alt="[[++saas.setting.site_name]]">
             `]]
-            [[++saas.setting.show_company:ne=``:then=`[[++saas.setting.site_name]]`]]
+            [[++saas.setting.show_company:is=`1`:then=`[[++saas.setting.site_name]]`]]
         </a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
             <span class="navbar-toggler-icon"></span>

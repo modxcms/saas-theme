@@ -7,13 +7,13 @@
             <div class="col-md-2 pb-md-5 pt-5">
                 <p class="mx-2 h5 text-uppercase fw-bolder text-md-start text-center">
                     [[++saas.setting.logo_dark:ne=``:then=`
-                        <img src="[[++logo_dark]]" width="30" height="30" alt="[[++saas.setting.site_name]]">
+                        <img src="[[++saas.setting.logo_dark]]" width="[[++saas.setting.logo_width:default=`30`]]" height="[[++saas.setting.logo_height:default=`30`]]" alt="[[++saas.setting.site_name]]">
                     `:else=`
                         [[++saas.setting.logo_light:ne=``:then=`
-                            <img src="[[++logo_light]]" width="30" height="30" alt="[[++saas.setting.site_name]]">
+                            <img src="[[++saas.setting.logo_light]]" width="[[++saas.setting.logo_width:default=`30`]]" height="[[++saas.setting.logo_height:default=`30`]]" alt="[[++saas.setting.site_name]]">
                         `]]
                     `]]
-                    [[++saas.setting.show_company:ne=``:then=`[[++saas.setting.site_name]]`]]
+                    [[++saas.setting.show_company:is=`1`:then=`[[++saas.setting.site_name]]`]]
                 </p>
             </div>
 
@@ -47,17 +47,17 @@
                     `]]
                     [[++saas.setting.social_fa:ne=``:then=`
                     <li class="list-inline-item">
-                        <a class="text-white" href="[[++saas.setting.social_fa]]"><i class="fab fa-lg fa-facebook-square"></i></a>
+                        <a class="text-white" href="[[++saas.setting.social_fa]]"><i class="fab fa-lg fa-square-facebook"></i></a>
                     </li>
                     `]]
                     [[++saas.setting.social_tw:ne=``:then=`
                     <li class="list-inline-item">
-                        <a class="text-white" href="[[++saas.setting.social_tw]]"><i class="fab fa-lg fa-twitter-square"></i></a>
+                        <a class="text-white" href="[[++saas.setting.social_tw]]"><i class="fab fa-lg fa-square-x-twitter"></i></a>
                     </li>
                     `]]
                     [[++saas.setting.social_yt:ne=``:then=`
                     <li class="list-inline-item">
-                        <a class="text-white" href="[[++saas.setting.social_yt]]"><i class="fab fa-lg fa-youtube-square"></i></a>
+                        <a class="text-white" href="[[++saas.setting.social_yt]]"><i class="fab fa-lg fa-square-youtube"></i></a>
                     </li>
                     `]]
                 </ul>
@@ -71,6 +71,7 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous" defer></script>
 <script src="[[++saas.theme_dir]]web/saas.min.js?lit=[[++saas.lit]]" defer></script>
+[[$saas.custom.footer-scripts]]
 </body>
 
 </html>

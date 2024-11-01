@@ -5,17 +5,20 @@
       {
         "name": "site_name",
         "label": "Company Name",
-        "global": false
+        "global": false,
+        "value": "SaaS Theme"
       },
       {
         "name": "contact_email",
         "label": "Contact Email",
-        "global": false
+        "global": false,
+        "value": "help@modx.com"
       },
       {
         "name": "contact_phone",
         "label": "Contact Phone",
-        "global": false
+        "global": false,
+        "value": "+1 (469) 777-6639"
       },
       {
         "name": "contact_phone_ext",
@@ -26,7 +29,8 @@
         "name": "contact_address",
         "label": "Contact Address",
         "type": "textarea",
-        "global": false
+        "global": false,
+        "value": "25 Highland Pk Vlg, Ste 100-413, \nDallas, TX 75205-2789, US"
       }
     ]
   },
@@ -86,17 +90,20 @@
       {
         "name": "social_fa",
         "label": "Facebook URL",
-        "global": false
+        "global": false,
+        "value": "https://facebook.com/modxcms"
       },
       {
         "name": "social_tw",
         "label": "Twitter/X URL",
-        "global": false
+        "global": false,
+        "value": "https://twitter.com/modx"
       },
       {
         "name": "social_li",
         "label": "LinkedIn URL",
-        "global": false
+        "global": false,
+        "value": "https://www.linkedin.com/company/modx/"
       },
       {
         "name": "social_in",
@@ -106,7 +113,8 @@
       {
         "name": "social_yt",
         "label": "YouTube URL",
-        "global": false
+        "global": false,
+        "value": "https://www.youtube.com/modx"
       }
     ]
   },
@@ -176,6 +184,66 @@
         "value": "#2f3b49",
         "showAlpha": false,
         "global": false
+      },
+      {
+        "name": "color_body_bg",
+        "label": "Body BG Color",
+        "type": "colorpicker",
+        "value": "#ffffff",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_body_text",
+        "label": "Body Text Color",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_heading",
+        "label": "Heading Color",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_link",
+        "label": "Link Color",
+        "type": "colorpicker",
+        "value": "#0d6efd",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_link_hover",
+        "label": "Link Hover Color",
+        "type": "colorpicker",
+        "value": "#0a58ca",
+        "showAlpha": false,
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "Fonts",
+    "settings": [
+      {
+        "name": "font_sans",
+        "label": "Sans Font",
+        "value": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\""
+      },
+      {
+        "name": "font_serif",
+        "label": "Serif Font",
+        "value": "Georgia,Times,\"Times New Roman\",serif"
+      },
+      {
+        "name": "font_mono",
+        "label": "Monospace Font",
+        "value": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
       }
     ]
   }
