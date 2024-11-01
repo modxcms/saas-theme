@@ -35,7 +35,7 @@
     ]
   },
   {
-    "group": "Site",
+    "group": "Blog",
     "settings": [
       {
         "name": "blog_show",
@@ -52,7 +52,12 @@
         "label": "Blog Resource",
         "type": "page",
         "global": false
-      },
+      }
+    ]
+  },
+  {
+    "group": "Logo",
+    "settings": [
       {
         "name": "logo_light",
         "label": "Light Logo",
