@@ -1,45 +1,60 @@
-<div class="my-5 py-5 bg-white">
+<div class="py-5 {{ bgcolor }} {{ textcolor }}">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-5">
-                <img class="img-fluid" src="{{ theme_dir }}web/img/map@2x.png" data-fred-name="image" data-fred-attrs="alt">
+                <img class="img-fluid" src="{{ theme_dir }}web/img/map@2x.png" data-fred-name="image"
+                     data-fred-attrs="alt">
             </div>
             <div class="col-md-6 px-5">
-                <h1 class="font-weight-light text-primary" data-fred-name="title">Contact Us</h1>
+                <h1 class="font-weight-light {{ textcolor }}" data-fred-name="title">Contact Us</h1>
                 <p class="lead" data-fred-name="lead">We would love to here from you</p>
-                <div class="row text-primary lead mb-3">
+                [[++saas.setting.contact_phone:ne=``:then=`
+                <div class="row {{ textcolor }} lead mb-3">
                     <div class="col-1">
                         <i class="fa fa-phone"></i>
                     </div>
-                    <div class="col"> [[++saas.setting.contact_phone]] [[++saas.setting.contact_phone_extension:ne=``:then=`ex [[++saas.setting.contact_phone_extension]]`]] </div>
+                    <div class="col"> [[++saas.setting.contact_phone]]
+                        [[++saas.setting.contact_phone_extension:ne=``:then=`ex
+                        [[++saas.setting.contact_phone_extension]]`]]
+                    </div>
                 </div>
-                <div class="row text-primary lead mb-3">
+                `]]
+                [[++saas.setting.contact_email:ne=``:then=`
+                <div class="row {{ textcolor }} lead mb-3">
                     <div class="col-1">
                         <i class="fa fa-envelope"></i>
                     </div>
-                    <div class="col"> [[++saas.setting.contact_email]] </div>
+                    <div class="col"> [[++saas.setting.contact_email]]</div>
                 </div>
-                <div class="row text-primary lead mb-5">
+                `]]
+                [[++saas.setting.contact_address:ne=``:then=`
+                <div class="row {{ textcolor }} lead mb-5">
                     <div class="col-1">
                         <i class="fa fa-map-marker"></i>
                     </div>
                     <div class="col"> [[++saas.setting.contact_address:nl2br]]</div>
                 </div>
+                `]]
                 <div class="row lead">
                     [[++saas.setting.social_li:ne=``:then=`
-                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_li]]"><i class="fab fa-2x fa-linkedin"></i></a>
+                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_li]]"><i
+                                class="fab fa-2x fa-linkedin"></i></a>
                     `]]
                     [[++saas.setting.social_in:ne=``:then=`
-                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_in]]"><i class="fab fa-2x fa-instagram"></i></a>
+                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_in]]"><i
+                                class="fab fa-2x fa-instagram"></i></a>
                     `]]
                     [[++saas.setting.social_fa:ne=``:then=`
-                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_fa]]"><i class="fab fa-2x fa-square-facebook"></i></a>
+                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_fa]]"><i
+                                class="fab fa-2x fa-square-facebook"></i></a>
                     `]]
                     [[++saas.setting.social_tw:ne=``:then=`
-                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_tw]]"><i class="fab fa-2x fa-square-x-twitter"></i></a>
+                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_tw]]"><i
+                                class="fab fa-2x fa-square-x-twitter"></i></a>
                     `]]
                     [[++saas.setting.social_yt:ne=``:then=`
-                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_yt]]"><i class="fab fa-2x fa-square-youtube"></i></a>
+                    <a class="text-secondary mr-2 col" href="[[++saas.setting.social_yt]]"><i
+                                class="fab fa-2x fa-square-youtube"></i></a>
                     `]]
                 </div>
             </div>

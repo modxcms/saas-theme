@@ -1,6 +1,6 @@
 name: SaaS
 lowCaseName: saas
-version: 0.0.1
+version: 0.0.2
 description: 'Software as a Service (SaaS) application theme.'
 author: matdave
 namespace: SaaS
@@ -261,6 +261,9 @@ fred:
             description: ''
         -
             name: list
+            description: ''
+        -
+            name: img
             description: ''
     optionSets:
         -

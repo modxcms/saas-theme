@@ -1,15 +1,16 @@
-<div class="py-5 bg-primary text-white text-md-left text-center">
+<div class="py-5 {{ bgcolor }} {{ textcolor }} text-md-left text-center">
     <div class="container">
         <div class="row">
             {% for c in 0..(benefits - 1) %}
                 <div class="col-lg-6 col-md-12">
                     <div class="row">
                         <div class="col-md-3 p-3">
-                            <i class="fa fa-5x fa-lock" data-fred-name="fa-{{c}}"></i>
+                            <i class="fa fa-5x fa-lock" data-fred-name="fa-{{ c }}"></i>
                         </div>
                         <div class="col-md-9 p-3">
-                            <h3 class="fw-light" data-fred-name="title-{{c}}">A benefit headline here.</h3>
-                            <p class="fw-light lead" data-fred-name="lead-{{c}}"> Use this space to highlight a benefit or feature about the prodcut, with an accompaning icon or graphic. </p>
+                            <h3 class="fw-light {{ textcolor }}" data-fred-name="title-{{ c }}">A benefit headline here.</h3>
+                            <p class="fw-light lead" data-fred-name="lead-{{ c }}"> Use this space to highlight a
+                                benefit or feature about the prodcut, with an accompaning icon or graphic. </p>
                         </div>
                     </div>
                 </div>

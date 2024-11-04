@@ -21,7 +21,7 @@
                 [[Wayfinder?
                     &startId=`0`
                     &level=`2`
-                    &displayStart=`0`
+                    &excludeDocs=`[[++site_start]][[++saas.setting.cta_link:ne=``:then=`,[[++saas.setting.cta_link]]`]]`
                     &outerTpl=`saas-nav-footer-outer`
                     &innerTpl=`saas-nav-footer-inner`
                     &rowTpl=`saas-nav-footer-row`

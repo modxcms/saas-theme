@@ -4,3 +4,17 @@ a {
     text-decoration: underline;
   }
 }
+
+h1, h2, h4
+{
+  font-family: var(--bs-font-serif);
+}
+
+.text-white, .text-light {
+  a {
+    color: var(--bs-light);
+    &:hover, &:focus {
+      color: var(--bs-light-dark);
+    }
+  }
+}

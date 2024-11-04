@@ -1,13 +1,28 @@
-{
-  "name": "style",
-  "label": "Style",
-  "type": "select",
-  "options": {
-    "bg-primary text-white": "Primary (text white)",
-    "bg-primary text-dark": "Primary (text dark)",
-    "bg-dark text-white": "Dark",
-    "bg-light": "Light",
-    "bg-white": "White"
+[
+  {
+    "name": "bgcolor",
+    "label": "Background Color",
+    "type": "select",
+    "options": {
+      "bg-primary": "Primary",
+      "bg-secondary": "Secondary",
+      "bg-dark": "Dark",
+      "bg-light": "Light",
+      "bg-white": "White"
+    },
+    "value": "bg-light"
   },
-  "value": "bg-dark text-white"
-}
+  {
+    "name": "textcolor",
+    "label": "Text Color",
+    "type": "select",
+    "options": {
+      "text-primary": "Primary",
+      "text-secondary": "Secondary",
+      "text-dark": "Dark",
+      "text-light": "Light",
+      "text-white": "White"
+    },
+    "value": "text-dark"
+  }
+]

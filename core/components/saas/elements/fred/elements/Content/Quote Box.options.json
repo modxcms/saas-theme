@@ -11,18 +11,6 @@
       }
     },
     {
-      "name": "text",
-      "label": "Text Color",
-      "type": "select",
-      "options": {
-        "text-black": "Black",
-        "text-dark": "Dark",
-        "text-light": "Light",
-        "text-white": "White"
-      },
-      "value": "text-dark"
-    },
-    {
       "name": "attr",
       "label": "Show Attribution",
       "type": "toggle",
@@ -38,6 +26,9 @@
       "name": "background",
       "label": "Background",
       "type": "image"
+    },
+    {
+      "fred-import": "option-style"
     }
   ]
 }

@@ -46,6 +46,7 @@
             --bs-font-sans-serif: [[++saas.setting.font_sans]];
             --bs-font-serif: [[++saas.setting.font_serif]];
             --bs-font-monospace: [[++saas.setting.font_monospace]];
+            --bs-border-radius: [[++saas.setting.border_radius]];
         }
     </style>
     [[$saas.custom.header-scripts]]

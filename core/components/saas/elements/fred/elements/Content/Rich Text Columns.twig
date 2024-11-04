@@ -1,12 +1,13 @@
 {% set colClass = (columns ? 12 / columns : 12)|round %}
-<div class="py-5 {{style}}">
+<div class="py-5 {{ bgcolor }} {{ textcolor }}">
     <div class="container">
-        {%if heading != "none" %}
-            <h1 class="fw-light py-4 {{heading}}" data-fred-name="title">More Features</h1>
-        {%endif%}
+        {% if heading != "none" %}
+            <h1 class="fw-light py-4 {{ heading }} {{ textcolor }}" data-fred-name="title">More Features</h1>
+        {% endif %}
         <div class="row lead justify-content-evenly">
             {% for c in 0..(columns - 1) %}
-                <div class="{%if columns > 3 %}col-lg-{{colClass}} col-sm-6{%else%}col-md-{{colClass}}{%endif%}" data-fred-name="text-{{c}}" data-fred-rte=true>
+                <div class="{% if columns > 3 %}col-lg-{{ colClass }} col-sm-6{% else %}col-md-{{ colClass }}{% endif %}"
+                     data-fred-name="text-{{ c }}" data-fred-rte=true>
                     <p>Enter some text about your product here.</p>
                 </div>
             {% endfor %}

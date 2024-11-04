@@ -35,6 +35,39 @@
     ]
   },
   {
+    "group": "CTA",
+    "settings": [
+      {
+          "name": "cta_button",
+          "label": "Button Text",
+          "global": false,
+          "value": "Request a Demo"
+      },
+      {
+          "name": "cta_link",
+          "label": "Page Link",
+          "type": "page",
+          "global": false
+      },
+      {
+         "name": "border_radius",
+         "label": "Round Corners",
+         "type": "select",
+         "options": {
+           "0.0rem": "Square",
+           "0.25rem": "Slightly Rounded",
+           "0.375rem": "Default",
+           "0.5rem": "Rounded",
+           "1rem": "Very Rounded",
+           "2rem": "Extremely Rounded",
+           "50rem": "Pill"
+         },
+        "global": false,
+        "value": "0.375rem"
+      }
+    ]
+  },
+  {
     "group": "Blog",
     "settings": [
       {

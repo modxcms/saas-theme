@@ -1,10 +1,10 @@
-<div class="py-5 bg-light">
+<div class="py-5 {{ bgcolor }} {{ textcolor }}">
     <div class="container mb-4">
-        <h6 class="text-center text-dark fw-light" data-fred-name="title">Customers who use us</h6>
-        <div class="row mt-5 text-center">
+        <h6 class="text-center {{ textcolor }} fw-light" data-fred-name="title">Customers who use us</h6>
+        <div class="row mt-5 text-center align-items-center">
             {% for c in 0..(customers - 1) %}
                 <div class="col-lg col-md-6 mb-5">
-                    <span class="p-4 bg-secondary text-white text-uppercase" data-fred-name="customer-{{c}}"> Company Logo </span>
+                    <span class="p-4 {{ logo_bgcolor }} {{ logo_textcolor }} {{ logo_border_radius }} overflow-hidden text-uppercase d-inline-block" data-fred-name="customer-{{ c }}" data-fred-rte="true" data-fred-rte-config="img"> Company Logo </span>
                 </div>
             {% endfor %}
         </div>

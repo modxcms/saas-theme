@@ -17,6 +17,9 @@
       "type": "toggle",
       "label": "Show Quote",
       "value": true
+    },
+    {
+      "fred-import": "option-style"
     }
   ]
 }

@@ -1,9 +1,14 @@
-<div class="py-5 bg-light" {%if background %}style="background:url('{{background}}') no-repeat center center; background-size: cover"{% endif %}>
+<div class="py-5 {{ bgcolor }} {{ textcolor }}"
+     {% if background %}style="background:url('{{ background }}') no-repeat center center; background-size: cover"{% endif %}>
     <div class="container">
         <div class="row my-5">
-            <div class="col-md-6 col-sm-8 {{text}} {{position}}">
-                <em class="lead{%if oversize %} display-6{%endif%}" data-fred-name="quote"> "Unlike the customer testimonials on the home page, that highlight the benefits of the single feature, this testimonial should highlight the benefits of the service/product as a whole. It should be from the persons own experience and how the product has helped their business." </em>
-                {% if attr %}<p class="lead mt-5" data-fred-name="attr"><strong>Nancy Drew</strong> - Vice President Accounting </p>{% endif %}
+            <div class="col-md-6 col-sm-8 {{ position }}">
+                <em class="lead{% if oversize %} display-6{% endif %}" data-fred-name="quote"> "Unlike the customer
+                    testimonials on the home page, that highlight the benefits of the single feature, this testimonial
+                    should highlight the benefits of the service/product as a whole. It should be from the persons own
+                    experience and how the product has helped their business." </em>
+                {% if attr %}<p class="lead mt-5" data-fred-name="attr"><strong>Nancy Drew</strong> - Vice President
+                    Accounting </p>{% endif %}
             </div>
         </div>
     </div>
