@@ -1,22 +1,24 @@
 [[$saas-head]]
-[[$saas-navigation]]
+[[$[[++saas.setting.header]]]]
 <main>
-    <div class="py-5 bg-white">
+    <div class="py-5">
         <div class="container">
             <div class="row">
                 <div class="col mb-sm-4">
-                    <h1 class="fw-light">Blog</h1>
+                    <h1 class="fw-light">[[*pagetitle]]</h1>
                 </div>
-                <div class="col-md-4">
-                    <form>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search Blog">
-                            <button class="btn">
-                                <i class="fas fa-search"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+                [[++saas.setting.blog_search_resource:gt=`0`:then=`
+                    <div class="col-md-4">
+                        <form action="[[~[[++saas.setting.blog_search_resource]]]]">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search Blog">
+                                <button class="btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                `]]
             </div>
             <hr>
             <div class="row">
@@ -56,4 +58,4 @@
         </div>
     </div>
 </main>
-[[$saas-footer]]
+[[$[[++saas.setting.footer]]]]

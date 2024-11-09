@@ -1,20 +1,47 @@
 a {
-  text-decoration: none;
-  &:hover, &:focus{
-    text-decoration: underline;
-  }
-}
+    text-decoration: none;
 
-h1, h2, h4
-{
-  font-family: var(--bs-font-serif);
-}
-
-.text-white, .text-light {
-  a {
-    color: var(--bs-light);
     &:hover, &:focus {
-      color: var(--bs-light-dark);
+        text-decoration: underline;
     }
-  }
+}
+
+h1, h2, h4 {
+    font-family: var(--bs-font-serif);
+}
+
+.text-white {
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--bs-white);
+    }
+
+    a {
+        color: var(--bs-light);
+
+        &:hover, &:focus {
+            color: var(--bs-light-dark);
+        }
+    }
+}
+
+.text-light {
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--bs-light);
+    }
+
+    a {
+        color: var(--bs-white);
+
+        &:hover, &:focus {
+            color: var(--bs-light-dark);
+        }
+    }
+}
+
+.font-sans {
+    font-family: var(--bs-font-sans-serif);
+}
+
+.font-serif {
+    font-family: var(--bs-font-serif);
 }

@@ -82,7 +82,13 @@
       },
       {
         "name": "blog_resource",
-        "label": "Blog Resource",
+        "label": "Blog Home Resource",
+        "type": "page",
+        "global": false
+      },
+      {
+        "name": "blog_search_resource",
+        "label": "Blog Search Resource",
         "type": "page",
         "global": false
       }
@@ -271,17 +277,41 @@
       {
         "name": "font_sans",
         "label": "Sans Font",
-        "value": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\""
+        "value": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+        "global": false
       },
       {
         "name": "font_serif",
         "label": "Serif Font",
-        "value": "Georgia,Times,\"Times New Roman\",serif"
+        "value": "Georgia,Times,\"Times New Roman\",serif",
+        "global": false
       },
       {
         "name": "font_mono",
         "label": "Monospace Font",
-        "value": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace"
+        "value": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "Layout",
+    "settings": [
+      {
+        "name": "header",
+        "label": "Header Chunk",
+        "type": "chunk",
+        "category": "Header",
+        "global": false,
+        "value": "saas-navigation"
+      },
+      {
+        "name": "footer",
+        "label": "Footer Chunk",
+        "type": "chunk",
+        "category": "Footer",
+        "global": false,
+        "value": "saas-footer"
       }
     ]
   }

@@ -1,11 +1,15 @@
-.form-inline {@extend .row}
+.form-inline {
+    @extend .row
+}
 
 .btn {
     text-decoration: none;
+
     &:hover, &:focus {
         text-decoration: none;
     }
 }
+
 .btn-primary {
     --bs-btn-bg: var(--bs-primary);
     --bs-btn-border-color: var(--bs-primary);
@@ -16,6 +20,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-primary);
 }
+
 .btn-secondary {
     --bs-btn-bg: var(--bs-secondary);
     --bs-btn-border-color: var(--bs-secondary);
@@ -26,6 +31,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-secondary);
 }
+
 .btn-success {
     --bs-btn-bg: var(--bs-success);
     --bs-btn-border-color: var(--bs-success);
@@ -36,6 +42,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-success);
 }
+
 .btn-info {
     --bs-btn-bg: var(--bs-info);
     --bs-btn-border-color: var(--bs-info);
@@ -46,6 +53,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-info);
 }
+
 .btn-warning {
     --bs-btn-bg: var(--bs-warning);
     --bs-btn-border-color: var(--bs-warning);
@@ -56,6 +64,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-warning);
 }
+
 .btn-danger {
     --bs-btn-bg: var(--bs-danger);
     --bs-btn-border-color: var(--bs-danger);
@@ -66,6 +75,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-danger);
 }
+
 .btn-light {
     --bs-btn-bg: var(--bs-light);
     --bs-btn-border-color: var(--bs-light);
@@ -76,6 +86,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-light);
 }
+
 .btn-dark {
     --bs-btn-bg: var(--bs-dark);
     --bs-btn-border-color: var(--bs-dark);
@@ -86,6 +97,7 @@
     --bs-btn-disabled-bg: var(--bs-gray-dark);
     --bs-btn-disabled-border-color: var(--bs-dark);
 }
+
 .btn-gray {
     --bs-btn-bg: var(--bs-gray);
     --bs-btn-border-color: var(--bs-gray);

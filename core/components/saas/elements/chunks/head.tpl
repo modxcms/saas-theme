@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="[[*description]]" />
     <link rel="stylesheet" href="[[++saas.theme_dir]]web/saas.css?lit=[[++saas.lit]]" />
+    <link rel="stylesheet" href="[[++fredfaeditor.link]]" />
     <style>
         :root {
             --bs-primary: [[++saas.setting.color_primary]];
