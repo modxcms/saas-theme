@@ -29,6 +29,7 @@ return new class() {
                     'name' => $chunk,
                     'content' => '<!-- INSERT CUSTOM SCRIPTS HERE -->',
                 ]);
+                $obj->save();
             }
         }
     }

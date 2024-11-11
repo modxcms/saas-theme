@@ -45,3 +45,8 @@ h1, h2, h4 {
 .font-serif {
     font-family: var(--bs-font-serif);
 }
+
+hr {
+    margin: 1rem 0 0;
+    padding: 0 0 1rem;
+}

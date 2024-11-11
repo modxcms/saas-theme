@@ -1,22 +1,22 @@
 [
   {
-    "group": "Company",
+    "group": "saas.group.company",
     "settings": [
       {
         "name": "site_name",
-        "label": "Company Name",
+        "label": "setting_saas.setting.site_name",
         "global": false,
         "value": "SaaS Theme"
       },
       {
         "name": "contact_email",
-        "label": "Contact Email",
+        "label": "setting_saas.setting.contact_email",
         "global": false,
         "value": "help@modx.com"
       },
       {
         "name": "contact_phone",
-        "label": "Contact Phone",
+        "label": "setting_saas.setting.contact_phone",
         "global": false,
         "value": "+1 (469) 777-6639"
       },
@@ -27,7 +27,7 @@
       },
       {
         "name": "contact_address",
-        "label": "Contact Address",
+        "label": "setting_saas.setting.contact_phone_ext",
         "type": "textarea",
         "global": false,
         "value": "25 Highland Pk Vlg, Ste 100-413, \nDallas, TX 75205-2789, US"
@@ -35,23 +35,23 @@
     ]
   },
   {
-    "group": "CTA",
+    "group": "saas.group.cta",
     "settings": [
       {
           "name": "cta_button",
-          "label": "Button Text",
+          "label": "setting_saas.setting.cta_button",
           "global": false,
           "value": "Request a Demo"
       },
       {
           "name": "cta_link",
-          "label": "Page Link",
+          "label": "setting_saas.setting.cta_link",
           "type": "page",
           "global": false
       },
       {
          "name": "border_radius",
-         "label": "Round Corners",
+         "label": "setting_saas.setting.border_radius",
          "type": "select",
          "options": {
            "0.0rem": "Square",
@@ -68,11 +68,11 @@
     ]
   },
   {
-    "group": "Blog",
+    "group": "saas.group.blog",
     "settings": [
       {
         "name": "blog_show",
-        "label": "Blog Article Count",
+        "label": "setting_saas.setting.blog_show",
         "type": "slider",
         "min": 1,
         "max": 10,
@@ -82,20 +82,20 @@
       },
       {
         "name": "blog_resource",
-        "label": "Blog Home Resource",
+        "label": "setting_saas.setting.blog_resource",
         "type": "page",
         "global": false
       },
       {
         "name": "blog_search_resource",
-        "label": "Blog Search Resource",
+        "label": "setting_saas.setting.blog_search_resource",
         "type": "page",
         "global": false
       }
     ]
   },
   {
-    "group": "Logo",
+    "group": "saas.group.logo",
     "settings": [
       {
         "name": "logo_light",

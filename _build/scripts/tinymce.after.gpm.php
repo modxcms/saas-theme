@@ -17,11 +17,16 @@ return new class() {
     {
         $theme = $this->modx->getObject(\Fred\Model\FredTheme::class, ['uuid' => '6cd24798-f105-4372-934c-9d5d51e190a9']);
         if ($theme) {
-            $element = $this->modx->getObject(\Fred\Model\FredElement::class, ['uuid' => 'd4817e56-488c-4445-b9e1-9d5f445fe957']);
-            if ($element) {
-                $theme->set('default_element', $element->get('id') . '|text-0');
-                $theme->save();
+            $defaultRTE = $theme->getOne('RTEConfig', ['name' => 'TinyMCE']);
+            if (empty($defaultRTE)) {
+                return;
             }
+            $backupRTE = $theme->getOne('RTEConfig', ['name' => 'TinyMCE Backup']);
+            if (empty($backupRTE)) {
+                return;
+            }
+            $defaultRTE->set('data', $backupRTE->get('data'));
+            $defaultRTE->save();
         }
     }
 };
