@@ -1,9 +1,11 @@
 {
   "theme": "inlite",
   "inline": true,
+  "cleanup": false,
+  "verify_html": false,
   "plugins": "modxlink image imagetools media lists contextmenu code",
-  "insert_toolbar": "image media quicktable modxlink styleselect",
-  "selection_toolbar": "styleselect | bold italic underline | alignleft aligncenter alignright | bullist numlist | modxlink h2 h3 h4 blockquote | code",
+  "insert_toolbar": "image media quicktable modxlink styleselect hr",
+  "selection_toolbar": "styleselect | bold italic underline | alignleft aligncenter alignright | bullist numlist | modxlink h2 h3 h4 blockquote hr | code | removeformat",
   "image_advtab": true,
   "imagetools_toolbar": "alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions",
   "auto_focus": false,
@@ -120,9 +122,56 @@
           "value": "btn btn-outline-dark"
         }
       ]
+    },
+    {
+      "title": "Colors",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "text-primary"
+        },
+        {
+          "title": "Secondary",
+          "value": "text-secondary"
+        },
+        {
+          "title": "Success",
+          "value": "text-success"
+        },
+        {
+          "title": "Danger",
+          "value": "text-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "text-warning"
+        },
+        {
+          "title": "Info",
+          "value": "text-info"
+        },
+        {
+          "title": "Light",
+          "value": "text-light"
+        },
+        {
+          "title": "Dark",
+          "value": "text-dark"
+        }
+      ]
     }
   ],
   "style_formats": [
+    {
+      "title": "Blocks",
+      "items": [
+        {
+          "title": "Half Width Rule",
+          "block": "hr",
+          "classes": "w-50 mx-auto"
+        }
+      ]
+    },
     {
       "title": "Colors",
       "items": [
@@ -165,26 +214,11 @@
           "title": "Dark",
           "inline": "span",
           "classes": "text-dark"
-        }
-      ]
-    },
-    {
-      "title": "Format",
-      "items": [
-        {
-          "title": "Uppercase",
-          "inline": "span",
-          "classes": "text-uppercase"
         },
         {
-          "title": "Lowercase",
+          "title": "Muted",
           "inline": "span",
-          "classes": "text-lowercase"
-        },
-        {
-          "title": "Capitalize",
-          "inline": "span",
-          "classes": "text-capitalize"
+          "classes": "text-muted"
         }
       ]
     },
@@ -274,41 +308,81 @@
         {
           "title": "Weight",
           "items": [
-              {
+            {
               "title": "Light",
               "inline": "span",
               "classes": "fw-light"
-              },
-              {
+            },
+            {
               "title": "Normal",
               "inline": "span",
               "classes": "fw-normal"
-              },
-              {
+            },
+            {
               "title": "Medium",
               "inline": "span",
               "classes": "fw-medium"
-              },
-              {
+            },
+            {
               "title": "Bold",
               "inline": "span",
               "classes": "fw-bold"
-              }
+            }
           ]
         },
         {
-          "title": "Small",
-          "inline": "small"
+          "title": "Line Height",
+          "items": [
+            {
+              "title": "1",
+              "inline": "span",
+              "classes": "lh-1"
+            },
+            {
+              "title": "Small",
+              "inline": "span",
+              "classes": "lh-sm"
+            },
+            {
+              "title": "Base",
+              "inline": "span",
+              "classes": "lh-base"
+            },
+            {
+              "title": "Large",
+              "inline": "span",
+              "classes": "lh-lg"
+            }
+          ]
         },
         {
-          "title": "Muted",
-          "inline": "span",
-          "classes": "text-muted"
-        },
-        {
-          "title": "Italic",
-          "inline": "span",
-          "classes": "fst-italic"
+          "title": "Formatting",
+          "items": [
+            {
+              "title": "Small",
+              "inline": "small"
+            },
+            {
+              "title": "Italic",
+              "inline": "span",
+              "classes": "fst-italic"
+            },
+            {
+              "title": "Uppercase",
+              "inline": "span",
+              "classes": "text-uppercase"
+            },
+            {
+              "title": "Lowercase",
+              "inline": "span",
+              "classes": "text-lowercase"
+            },
+            {
+              "title": "Capitalize",
+              "inline": "span",
+              "classes": "text-capitalize"
+            }
+          ]
         }
       ]
     }

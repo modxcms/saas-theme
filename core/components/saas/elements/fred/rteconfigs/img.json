@@ -1,6 +1,8 @@
 {
   "theme": "inlite",
   "inline": true,
+  "cleanup": false,
+  "verify_html": false,
   "plugins": "modxlink image imagetools contextmenu code",
   "insert_toolbar": "image modxlink",
   "selection_toolbar": "image | bold italic | modxlink | code",

@@ -1,4 +1,4 @@
-<div class="{% if padding %}py-4 {% endif %}{{ bgcolor }}">
+<div class="{% if padding %}py-4 {% endif %}{{ bgcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
     <div class="container{% if padding %} {% else %} px-0{% endif %}">
         <img class="img-fluid" src="{{ theme_dir }}web/img/about-group-photo@2x.png" data-fred-name="image"
              data-fred-attrs="alt"/>

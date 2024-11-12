@@ -1,4 +1,4 @@
-<div class="py-5 {{ bgcolor }} {{ textcolor }}">
+<div class="py-5 {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
     <div class="container">
         <div class="row">
             <div class="col-md-6 mb-5">

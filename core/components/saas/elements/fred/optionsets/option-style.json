@@ -1,28 +1,69 @@
 [
   {
-    "name": "bgcolor",
-    "label": "Background Color",
-    "type": "select",
-    "options": {
-      "bg-primary": "Primary",
-      "bg-secondary": "Secondary",
-      "bg-dark": "Dark",
-      "bg-light": "Light",
-      "bg-white": "White"
-    },
-    "value": "bg-light"
+    "group": "Style",
+    "settings": [
+      {
+        "name": "bgcolor",
+        "label": "Background Color",
+        "type": "select",
+        "options": {
+          "bg-primary": "Primary",
+          "bg-secondary": "Secondary",
+          "bg-dark": "Dark",
+          "bg-light": "Light",
+          "bg-white": "White"
+        },
+        "value": "bg-light"
+      },
+      {
+        "name": "textcolor",
+        "label": "Text Color",
+        "type": "select",
+        "options": {
+          "text-primary": "Primary",
+          "text-secondary": "Secondary",
+          "text-dark": "Dark",
+          "text-light": "Light",
+          "text-white": "White"
+        },
+        "value": "text-dark"
+      }
+    ]
   },
   {
-    "name": "textcolor",
-    "label": "Text Color",
-    "type": "select",
-    "options": {
-      "text-primary": "Primary",
-      "text-secondary": "Secondary",
-      "text-dark": "Dark",
-      "text-light": "Light",
-      "text-white": "White"
-    },
-    "value": "text-dark"
+    "group": "Borders",
+    "settings": [
+      {
+        "name": "border",
+        "label": "Border",
+        "type": "select",
+        "options": {
+            "border-primary": "Primary",
+            "border-secondary": "Secondary",
+            "border-dark": "Dark",
+            "border-light": "Light",
+            "border-white": "White"
+        },
+        "value": "border-dark"
+      },
+      {
+        "name": "border_top",
+        "label": "Top Border",
+        "type": "toggle"
+      },
+      {
+        "name": "border_bottom",
+        "label": "Top Border",
+        "type": "toggle"
+      },
+      {
+        "name": "border_size",
+        "label": "Border Size",
+        "type": "slider",
+        "value": 0,
+        "min": 0,
+        "max": 5
+      }
+    ]
   }
 ]

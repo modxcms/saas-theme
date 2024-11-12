@@ -1,4 +1,4 @@
-<div class="py-5 {{bgcolor}}">
+<div class="py-5 {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
     <div class="container">
         <h1 class="fw-light text-center {{ textcolor }} pt-4" data-fred-name="title">Benefits and Features</h1>
         <h5 class="fw-light text-center {{ textcolor }}" data-fred-name="content">A great cta is persuasive, creates a sense of urgency, and is action oriented</h5>

@@ -1,5 +1,5 @@
 {% set colClass = (columns ? 12 / columns : 12) %}
-<div class="py-4  {{ bgcolor }} {{ textcolor }}">
+<div class="py-4  {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
     <div class="container">
         <div class="row justify-content-center">
             {% for c in 0..(columns - 1) %}

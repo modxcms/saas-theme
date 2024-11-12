@@ -1,6 +1,6 @@
 name: SaaS
 lowCaseName: saas
-version: 0.0.4
+version: 0.0.6
 description: 'Software as a Service (SaaS) application theme.'
 author: matdave
 namespace: SaaS
@@ -209,6 +209,10 @@ fred:
                 - 'Saas Blog Home'
             uuid: 2638aaf1-ab8d-4fa4-ad3c-9d5d51e19ed3
     elements:
+        -
+            name: Anchor
+            category: Content
+            uuid: 3e05b002-50cf-45f3-861c-9d78e713c855
         -
             name: Benefits
             category: Content

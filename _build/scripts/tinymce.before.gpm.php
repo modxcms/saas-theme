@@ -17,19 +17,23 @@ return new class() {
     {
         $theme = $this->modx->getObject(\Fred\Model\FredTheme::class, ['uuid' => '6cd24798-f105-4372-934c-9d5d51e190a9']);
         if ($theme) {
-            $defaultRTE = $theme->getOne('RTEConfig', ['name' => 'TinyMCE']);
+            $defaultRTE = $this->modx->getObject(\Fred\Model\FredElementRTEConfig::class, ['name' => 'TinyMCE', 'theme' => $theme->get('id')]);
             if (empty($defaultRTE)) {
+                $this->modx->log(modX::LOG_LEVEL_ERROR, 'TinyMCE RTE Config not found');
                 return;
             }
-            $backupRTE = $theme->getOne('RTEConfig', ['name' => 'TinyMCE Backup']);
+            $backupRTE = $this->modx->getObject(\Fred\Model\FredElementRTEConfig::class, ['name' => 'TinyMCE Backup']);
             if (empty($backupRTE)) {
                 $backupRTE = $this->modx->newObject(\Fred\Model\FredElementRTEConfig::class);
                 $backupRTE->set('name', 'TinyMCE Backup');
                 $backupRTE->set('description', 'Backup of the TinyMCE RTE Config');
-                $backupRTE->set('theme', $theme->get('id'));
             }
             $backupRTE->set('data', $defaultRTE->get('data'));
-            $backupRTE->save();
+            if ($backupRTE->save()) {
+                $this->modx->log(modX::LOG_LEVEL_INFO, 'TinyMCE Backup RTE Config created');
+            } else {
+                $this->modx->log(modX::LOG_LEVEL_ERROR, 'TinyMCE Backup RTE Config not created');
+            }
         }
     }
 };

@@ -13,7 +13,7 @@ $r = hexdec(substr($input, 0, 2));
 $g = hexdec(substr($input, 2, 2));
 $b = hexdec(substr($input, 4, 2));
 
-$darken = $options ? (int) $options : 0.5;
+$darken = $options ? (float) $options : 0.5;
 
 if ($darken < 0) {
     $darken = 0;
