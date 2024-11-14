@@ -161,6 +161,40 @@
       ]
     }
   ],
+  "formats": {
+    "alignleft": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-left"
+    },
+    "aligncenter": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-center"
+    },
+    "alignright": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-right"
+    },
+    "alignjustify": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-justify"
+    },
+    "bold": {
+      "inline": "span",
+      "classes": "fw-bold"
+    },
+    "italic": {
+      "inline": "span",
+      "classes": "fst-italic"
+    },
+    "underline": {
+      "inline": "span",
+      "classes": "text-decoration-underline"
+    },
+    "strikethrough": {
+      "inline": "span",
+      "classes": "text-decoration-line-through"
+    }
+  },
   "style_formats": [
     {
       "title": "Blocks",
@@ -168,7 +202,8 @@
         {
           "title": "Half Width Rule",
           "block": "hr",
-          "classes": "w-50 mx-auto"
+          "classes": "w-50 mx-auto",
+          "wrapper": false
         }
       ]
     },

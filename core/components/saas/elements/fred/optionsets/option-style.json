@@ -65,5 +65,22 @@
         "max": 5
       }
     ]
+  },
+  {
+    "group": "Padding",
+    "settings": [
+      {
+        "name": "padding",
+        "label": "Padding",
+        "type": "select",
+        "options": {
+          "py-2": "None",
+          "py-5": "Normal",
+          "pt-5 pb-2": "Top",
+          "pt-2 pb-5": "Bottom"
+        },
+        "value": "py-5"
+      }
+    ]
   }
 ]

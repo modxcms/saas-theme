@@ -1,4 +1,4 @@
-<div class="py-5 {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} text-md-left text-center">
+<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} text-md-left text-center">
     <div class="container">
         <div class="row">
             {% for c in 0..(benefits - 1) %}
@@ -8,8 +8,8 @@
                             <i class="fa fa-5x fa-lock" data-fred-name="fa-{{ c }}"></i>
                         </div>
                         <div class="col-md-9 p-3">
-                            <h3 class="fw-light {{ textcolor }}" data-fred-name="title-{{ c }}">A benefit headline here.</h3>
-                            <p class="fw-light lead" data-fred-name="lead-{{ c }}"> Use this space to highlight a
+                            <h3 class="{{ textcolor }}" data-fred-name="title-{{ c }}">A benefit headline here.</h3>
+                            <p class="lead" data-fred-name="lead-{{ c }}"> Use this space to highlight a
                                 benefit or feature about the prodcut, with an accompaning icon or graphic. </p>
                         </div>
                     </div>

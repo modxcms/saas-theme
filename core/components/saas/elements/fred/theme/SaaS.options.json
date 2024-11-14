@@ -91,6 +91,22 @@
         "label": "setting_saas.setting.blog_search_resource",
         "type": "page",
         "global": false
+      },
+      {
+        "name": "blog_home_layout",
+        "label": "setting_saas.setting.blog_home_layout",
+        "type": "chunk",
+        "category": "Layouts",
+        "global": false,
+        "value": "saas-blog-home-layout"
+      },
+      {
+        "name": "blog_post_layout",
+        "label": "setting_saas.setting.blog_post_layout",
+        "type": "chunk",
+        "category": "Layouts",
+        "global": false,
+        "value": "saas-blog-post-layout"
       }
     ]
   },
@@ -99,29 +115,29 @@
     "settings": [
       {
         "name": "logo_light",
-        "label": "Light Logo",
+        "label": "setting_saas.setting.logo_light",
         "type": "image",
         "global": false
       },
       {
         "name": "logo_dark",
-        "label": "Dark Logo",
+        "label": "setting_saas.setting.logo_dark",
         "type": "image",
         "global": false
       },
       {
         "name": "logo_width",
-        "label": "Logo Width",
+        "label": "setting_saas.setting.logo_width",
         "global": false
       },
       {
         "name": "logo_height",
-        "label": "Logo Height",
+        "label": "setting_saas.setting.logo_height",
         "global": false
       },
       {
         "name": "show_company",
-        "label": "Show Company Name Next to Logo",
+        "label": "setting_saas.setting.show_company",
         "type": "toggle",
         "value": true,
         "global": false
@@ -129,45 +145,45 @@
     ]
   },
   {
-    "group": "Social",
+    "group": "saas.group.social",
     "settings": [
       {
         "name": "social_fa",
-        "label": "Facebook URL",
+        "label": "setting_saas.setting.social_fa",
         "global": false,
         "value": "https://facebook.com/modxcms"
       },
       {
         "name": "social_tw",
-        "label": "Twitter/X URL",
+        "label": "setting_saas.setting.social_tw",
         "global": false,
         "value": "https://twitter.com/modx"
       },
       {
         "name": "social_li",
-        "label": "LinkedIn URL",
+        "label": "setting_saas.setting.social_li",
         "global": false,
         "value": "https://www.linkedin.com/company/modx/"
       },
       {
         "name": "social_in",
-        "label": "Instagram URL",
+        "label": "setting_saas.setting.social_in",
         "global": false
       },
       {
         "name": "social_yt",
-        "label": "YouTube URL",
+        "label": "setting_saas.setting.social_yt",
         "global": false,
         "value": "https://www.youtube.com/modx"
       }
     ]
   },
   {
-    "group": "Colors",
+    "group": "saas.group.colors",
     "settings": [
       {
         "name": "color_primary",
-        "label": "Primary Color",
+        "label": "setting_saas.setting.primary_color",
         "type": "colorpicker",
         "value": "#265782",
         "showAlpha": false,

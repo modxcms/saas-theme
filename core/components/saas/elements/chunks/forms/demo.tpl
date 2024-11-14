@@ -6,9 +6,9 @@
             </div>
             <div class="col">
                 <form class="form-inline">
-                    <label class="col-lg-4 col-sm-12"><input type="text" class="form-control fw-light me-lg-2 mb-2 border" placeholder="First Name"></label>
-                    <label class="col-lg-5 col-sm-12"><input type="text" class="form-control fw-light me-lg-2 mb-2 border" placeholder="Email"></label>
-                    <div class="col"><button type="submit" class="btn btn-primary text-white fw-light mb-sm-2">Opt In</button></div>
+                    <label class="col-lg-4 col-sm-12"><input type="text" class="form-control me-lg-2 mb-2 border" placeholder="First Name"></label>
+                    <label class="col-lg-5 col-sm-12"><input type="text" class="form-control me-lg-2 mb-2 border" placeholder="Email"></label>
+                    <div class="col"><button type="submit" class="btn btn-primary text-white mb-sm-2">Opt In</button></div>
                 </form>
             </div>
         </div>

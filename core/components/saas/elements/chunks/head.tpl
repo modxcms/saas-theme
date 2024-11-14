@@ -50,6 +50,10 @@
             --bs-border-radius: [[++saas.setting.border_radius]];
             --bs-border-radius-lg: [[++saas.setting.border_radius]];
         }
+        .pagination {
+            --bs-pagination-active-bg: var(--bs-primary);
+            --bs-pagination-active-border-color: var(--bs-primary);
+        }
     </style>
     [[$saas.custom.header-scripts]]
 </head>

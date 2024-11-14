@@ -1,6 +1,6 @@
 name: SaaS
 lowCaseName: saas
-version: 0.0.6
+version: 0.0.12
 description: 'Software as a Service (SaaS) application theme.'
 author: matdave
 namespace: SaaS
@@ -17,13 +17,15 @@ categories:
         name: Header
     -
         name: Footer
+    -
+        name: Layouts
 templates:
     -
-        name: 'Saas Blog Post'
+        name: 'SaaS Blog Post'
         category: Fred
         file: fred/blog-post.html
     -
-        name: 'Saas Blog Home'
+        name: 'SaaS Blog Home'
         category: Fred
         file: fred/blog-home.html
     -
@@ -46,7 +48,7 @@ chunks:
         name: saas-head
         file: head.tpl
     -
-        name: saas-blog-featured-item
+        name: saas_blog_featured-item
         category: Blog
         file: blog/featured-item.tpl
     -
@@ -54,7 +56,7 @@ chunks:
         category: Blog
         file: blog/item.tpl
     -
-        name: saas-blog-sidebar-item
+        name: saas_blog_sidebar-item
         category: Blog
         file: blog/sidebar-item.tpl
     -
@@ -97,6 +99,14 @@ chunks:
         name: saas-nav-main-row
         category: Navigation
         file: navigation/main-row.tpl
+    -
+        name: saas-blog-home-layout
+        category: Layouts
+        file: layouts/blog-home.tpl
+    -
+        name: saas-blog-post-layout
+        category: Layouts
+        file: layouts/blog-post.tpl
 plugins:
     -
         name: saasLexicon
@@ -112,14 +122,14 @@ snippets:
         file: saasDarken.php
 tvs:
     -
-        name: saas-blog-featured
+        name: saas_blog_featured
         category: Blog
         type: checkbox
         caption: Featured
         content: ''
         inputOptionValues: Yes==1
         templates:
-            - 'Saas Blog Post'
+            - 'SaaS Blog Post'
         properties:
             -
                 name: fred
@@ -129,13 +139,15 @@ tvs:
                 name: fred.type
                 value: toggle
     -
-        name: saas-blog-image
-        category: Blog
+        name: saas_page_featured_image
         type: image
         caption: Image
         content: ''
         templates:
-            - 'Saas Blog Post'
+            - 'SaaS Blog Post'
+            - 'SaaS Blog Home'
+            - 'SaaS Main'
+            - 'SaaS Custom Landing'
         properties:
             -
                 name: fred
@@ -144,18 +156,15 @@ tvs:
             -
                 name: fred.type
                 value: image
-            -
-                name: fred.mediaSource
-                value: Assets
     -
-        name: saas-blog-sidebar
+        name: saas_blog_sidebar
         category: Blog
         type: freddropzone
         caption: Sidebar
         content: '@INHERIT'
         templates:
-            - 'Saas Blog Post'
-            - 'Saas Blog Home'
+            - 'SaaS Blog Post'
+            - 'SaaS Blog Home'
 systemSettings:
     -
         key: theme_dir.custom_path
@@ -173,6 +182,7 @@ build:
         - chunks.gpm.php
         - defaultelement.after.gpm.php
         - tinymce.after.gpm.php
+        - propertyset.gpm.php
     scriptsBefore:
         - defaultelement.before.gpm.php
         - tinymce.before.gpm.php
@@ -186,9 +196,9 @@ build:
 fred:
     templates:
         -
-            name: 'Saas Blog Post'
+            name: 'SaaS Blog Post'
         -
-            name: 'Saas Blog Home'
+            name: 'SaaS Blog Home'
         -
             name: 'SaaS Main'
     elementCategories:
@@ -201,12 +211,12 @@ fred:
             name: Content
             templates:
                 - 'SaaS Main'
-                - 'Saas Blog Post'
+                - 'SaaS Blog Post'
             uuid: 87bed3b7-ba73-4bac-86d9-9d5f4664398d
         -
             name: Sidebar
             templates:
-                - 'Saas Blog Home'
+                - 'SaaS Blog Home'
             uuid: 2638aaf1-ab8d-4fa4-ad3c-9d5d51e19ed3
     elements:
         -

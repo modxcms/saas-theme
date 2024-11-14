@@ -1,4 +1,4 @@
-<div class="row my-5 {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
+<div class="row {{ padding | replace({"p":"y"}) }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
     <div class="col">
         <h4 class="fw-bold text-center my-4" data-fred-name="title">Beacon Lead Magnet</h4>
         <p class="text-center" data-fred-name="sub">Cold Traffic</p>
