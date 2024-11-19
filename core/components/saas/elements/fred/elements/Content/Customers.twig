@@ -1,6 +1,6 @@
 <div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
     <div class="container mb-4">
-        <h6 class="text-center {{ textcolor }} fw-light" data-fred-name="title">Customers who use us</h6>
+        <h6 class="text-center {{ textcolor }}" data-fred-name="title">Customers who use us</h6>
         <div class="row mt-5 text-center align-items-center">
             {% for c in 0..(customers - 1) %}
                 <div class="col-lg col-md-6 mb-5">

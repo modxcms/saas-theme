@@ -15,6 +15,9 @@ return new class() {
 
     private function run(): void
     {
+        if (!in_array($this->action, ['install', 'upgrade', 0, 1])) {
+            return;
+        }
         $setting = $this->modx->getObject(\MODX\Revolution\modSystemSetting::class, ['key' => 'saas.lit']);
         if (!$setting) {
             $setting = $this->modx->newObject(\MODX\Revolution\modSystemSetting::class);

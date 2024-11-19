@@ -56,12 +56,7 @@
       ]
     },
     {
-      "group": "Colors",
-      "settings": [
-          {
-            "fred-import": "option-style"
-          }
-      ]
+      "fred-import": "option-style"
     }
   ]
 }

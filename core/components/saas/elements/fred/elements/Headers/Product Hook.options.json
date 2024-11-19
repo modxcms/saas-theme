@@ -1,0 +1,13 @@
+{
+  "settings": [
+    {
+      "type": "toggle",
+      "name": "link",
+      "label": "Show Link",
+      "value": true
+    },
+    {
+      "fred-import": "option-style"
+    }
+  ]
+}

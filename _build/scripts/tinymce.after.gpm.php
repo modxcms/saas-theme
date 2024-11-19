@@ -15,6 +15,9 @@ return new class() {
 
     private function run(): void
     {
+        if (!in_array($this->action, ['install', 'upgrade', 0, 1])) {
+            return;
+        }
         $theme = $this->modx->getObject(\Fred\Model\FredTheme::class, ['uuid' => '6cd24798-f105-4372-934c-9d5d51e190a9']);
         if ($theme) {
             $defaultRTE = $this->modx->getObject(\Fred\Model\FredElementRTEConfig::class, ['name' => 'TinyMCE', 'theme' => $theme->get('id')]);

@@ -15,6 +15,9 @@ return new class() {
 
     private function run(): void
     {
+        if (!in_array($this->action, ['install', 'upgrade', 0, 1])) {
+            return;
+        }
         $propertySet = $this->modx->getObject(\MODX\Revolution\modPropertySet::class, ['name' => 'SaaSgetPage']);
         if (!$propertySet) {
             $propertySet = $this->modx->newObject(\MODX\Revolution\modPropertySet::class);
@@ -83,6 +86,7 @@ return new class() {
         $propertySet->save();
         $snippet = $this->modx->getObject(\MODX\Revolution\modSnippet::class, ['name' => 'getPage']);
         if (empty($snippet)) {
+            $this->modx->log(\xPDO::LOG_LEVEL_ERROR, 'Snippet getPage not found');
             return;
         }
         $elementPropertySet = $this->modx->getObject(\MODX\Revolution\modElementPropertySet::class, [
@@ -92,12 +96,11 @@ return new class() {
         ]);
         if (empty($elementPropertySet)) {
             $elementPropertySet = $this->modx->newObject(\MODX\Revolution\modElementPropertySet::class);
-            $elementPropertySet->fromArray([
-                'element_class' => \MODX\Revolution\modSnippet::class,
-                'element' => $snippet->get('id'),
-                'property_set' => $propertySet->get('id'),
-            ]);
+            $elementPropertySet->set('element_class', \MODX\Revolution\modSnippet::class);
+            $elementPropertySet->set('element', $snippet->get('id'));
+            $elementPropertySet->set('property_set', $propertySet->get('id'));
             $elementPropertySet->save();
+            $snippet->save();
         }
     }
 };

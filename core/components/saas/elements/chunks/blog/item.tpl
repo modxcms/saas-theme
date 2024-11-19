@@ -6,6 +6,6 @@
     `]]
     <div class="col">
         <h3 class="mt-5"><a class="text-primary" href="[[~[[+id]]]]">[[+pagetitle]]</a></h3>
-        <p class="lead">[[+introtext:default=`[[+content:ellipsis=`400`]]`]]</p>
+        <p class="lead">[[+introtext:default=`[[+content:striptags:ellipsis=`400`]]`]]</p>
     </div>
 </div>

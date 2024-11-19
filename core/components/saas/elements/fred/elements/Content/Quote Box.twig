@@ -1,6 +1,9 @@
-<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}"
-     {% if background %}style="background:url('{{ background }}') no-repeat center center; background-size: cover"{% endif %}>
-    <div class="container">
+<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} position-relative">
+    {% if background %}
+        <img src="{{ background }}" class="position-absolute top-0 start-0 w-100 h-100 opacity-25 object-fit-cover" alt="Quote Box Background Image" />
+    {% endif %}
+
+    <div class="container position-relative">
         <div class="row my-5">
             <div class="col-md-6 col-sm-8 {{ position }}">
                 <em class="lead{% if oversize %} display-6{% endif %}" data-fred-name="quote"> "Unlike the customer

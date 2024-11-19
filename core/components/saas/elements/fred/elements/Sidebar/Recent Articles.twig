@@ -1,7 +1,7 @@
-<div class="row my-5 text-muted">
+<div class="row {{ padding | replace({"p":"m"}) }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
     <div class="col">
-        <h4 class="fw-bold">Recent Posts</h4>
-        <div class="mt-md-3">
+        <h4 class="fw-bold my-4 {{ textcolor }}">[[%saas.fe.blog_recent? &topic=`fe` &namespace=`saas`]]</h4>
+        <div class="mt-md-3 {{ textcolor }}">
             [[getResources?
                 &parents=`[[++saas.setting.blog_resource]]`
                 &tpl=`saas_blog_sidebar-item`

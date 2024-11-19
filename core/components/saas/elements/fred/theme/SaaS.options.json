@@ -54,13 +54,13 @@
          "label": "setting_saas.setting.border_radius",
          "type": "select",
          "options": {
-           "0.0rem": "Square",
-           "0.25rem": "Slightly Rounded",
-           "0.375rem": "Default",
-           "0.5rem": "Rounded",
-           "1rem": "Very Rounded",
-           "2rem": "Extremely Rounded",
-           "50rem": "Pill"
+           "0.0rem": "setting_saas.setting.border_radius.square",
+           "0.25rem": "setting_saas.setting.border_radius.slightly_rounded",
+           "0.375rem": "setting_saas.setting.border_radius.default",
+           "0.5rem": "setting_saas.setting.border_radius.rounded",
+           "1rem": "setting_saas.setting.border_radius.very_rounded",
+           "2rem": "setting_saas.setting.border_radius.extremely_rounded",
+           "50rem": "setting_saas.setting.border_radius.pill"
          },
         "global": false,
         "value": "0.375rem"
@@ -191,7 +191,7 @@
       },
       {
         "name": "color_secondary",
-        "label": "Secondary Color",
+        "label": "setting_saas.setting.secondary_color",
         "type": "colorpicker",
         "value": "#868e96",
         "showAlpha": false,
@@ -199,7 +199,7 @@
       },
       {
         "name": "color_success",
-        "label": "Success Color",
+        "label": "setting_saas.setting.success_color",
         "type": "colorpicker",
         "value": "#28a745",
         "showAlpha": false,
@@ -207,7 +207,7 @@
       },
       {
         "name": "color_info",
-        "label": "Info Color",
+        "label": "setting_saas.setting.info_color",
         "type": "colorpicker",
         "value": "#17a2b8",
         "showAlpha": false,
@@ -215,7 +215,7 @@
       },
       {
         "name": "color_warning",
-        "label": "Warning Color",
+        "label": "setting_saas.setting.warning_color",
         "type": "colorpicker",
         "value": "#ffc107",
         "showAlpha": false,
@@ -223,7 +223,7 @@
       },
       {
         "name": "color_danger",
-        "label": "Danger Color",
+        "label": "setting_saas.setting.danger_color",
         "type": "colorpicker",
         "value": "#dc3545",
         "showAlpha": false,
@@ -231,7 +231,7 @@
       },
       {
         "name": "color_light",
-        "label": "Light Color",
+        "label": "setting_saas.setting.light_color",
         "type": "colorpicker",
         "value": "#f7f8fb",
         "showAlpha": false,
@@ -239,7 +239,7 @@
       },
       {
         "name": "color_dark",
-        "label": "Dark Color",
+        "label": "setting_saas.setting.dark_color",
         "type": "colorpicker",
         "value": "#2f3b49",
         "showAlpha": false,
@@ -247,7 +247,7 @@
       },
       {
         "name": "color_body_bg",
-        "label": "Body BG Color",
+        "label": "setting_saas.setting.color_body_bg",
         "type": "colorpicker",
         "value": "#ffffff",
         "showAlpha": false,
@@ -255,7 +255,7 @@
       },
       {
         "name": "color_body_text",
-        "label": "Body Text Color",
+        "label": "setting_saas.setting.color_body_text",
         "type": "colorpicker",
         "value": "#2f3b49",
         "showAlpha": false,
@@ -263,7 +263,7 @@
       },
       {
         "name": "color_heading",
-        "label": "Heading Color",
+        "label": "setting_saas.setting.color_heading",
         "type": "colorpicker",
         "value": "#2f3b49",
         "showAlpha": false,
@@ -271,7 +271,7 @@
       },
       {
         "name": "color_link",
-        "label": "Link Color",
+        "label": "setting_saas.setting.color_link",
         "type": "colorpicker",
         "value": "#0d6efd",
         "showAlpha": false,
@@ -279,7 +279,7 @@
       },
       {
         "name": "color_link_hover",
-        "label": "Link Hover Color",
+        "label": "setting_saas.setting.color_link_hover",
         "type": "colorpicker",
         "value": "#0a58ca",
         "showAlpha": false,
@@ -288,34 +288,34 @@
     ]
   },
   {
-    "group": "Fonts",
+    "group": "saas.group.fonts",
     "settings": [
       {
         "name": "font_sans",
-        "label": "Sans Font",
+        "label": "setting_saas.setting.font_sans",
         "value": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
         "global": false
       },
       {
         "name": "font_serif",
-        "label": "Serif Font",
+        "label": "setting_saas.setting.font_serif",
         "value": "Georgia,Times,\"Times New Roman\",serif",
         "global": false
       },
       {
         "name": "font_mono",
-        "label": "Monospace Font",
+        "label": "setting_saas.setting.font_mono",
         "value": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
         "global": false
       }
     ]
   },
   {
-    "group": "Layout",
+    "group": "saas.group.layout",
     "settings": [
       {
         "name": "header",
-        "label": "Header Chunk",
+        "label": "setting_saas.setting.header",
         "type": "chunk",
         "category": "Header",
         "global": false,
@@ -323,7 +323,7 @@
       },
       {
         "name": "footer",
-        "label": "Footer Chunk",
+        "label": "setting_saas.setting.footer",
         "type": "chunk",
         "category": "Footer",
         "global": false,

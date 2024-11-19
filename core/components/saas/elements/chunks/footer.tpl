@@ -32,7 +32,7 @@
             </div>
 
             <div class="col-md-2 py-md-5 text-md-right text-center">
-                <p class="small">&copy; Copyright [[+nowdate:default=`now`:strtotime:date=`%Y`]]</p>
+                <p class="small">&copy; [[%saas.fe.copyright? &topic=`fe` &namespace=`saas`]] [[+nowdate:default=`now`:strtotime:date=`%Y`]]</p>
 
                 <ul class="list-inline">
                     [[++saas.setting.social_li:ne=``:then=`

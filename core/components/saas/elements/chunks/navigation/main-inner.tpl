@@ -1,1 +1,1 @@
-<ul class="navbar-nav fw-light">[[+wf.wrapper]]</ul>
+<ul class="navbar-nav">[[+wf.wrapper]]</ul>

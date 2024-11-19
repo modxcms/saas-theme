@@ -6,11 +6,11 @@
       "label": "Heading Position",
       "options": {
         "none": "Hidden",
-        "text-left": "Left",
+        "text-start": "Left",
         "text-center": "Center",
-        "text-right": "Right"
+        "text-end": "Right"
       },
-      "value": "text-left"
+      "value": "text-start"
     },
     {
       "name": "columns",

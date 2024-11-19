@@ -1,7 +1,7 @@
-<div class="row {{ padding | replace({"p":"y"}) }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
+<div class="row {{ padding | replace({"p":"m"}) }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
     <div class="col">
-        <h4 class="fw-bold text-center my-4" data-fred-name="title">Beacon Lead Magnet</h4>
-        <p class="text-center" data-fred-name="sub">Cold Traffic</p>
+        <h4 class="fw-bold text-center my-4 {{ textcolor }}" data-fred-name="title">Beacon Lead Magnet</h4>
+        <p class="text-center {{ textcolor }}" data-fred-name="sub">A great cta is persuasive, creates a sense of urgency, and is action oriented.</p>
         <img class="img-fluid my-5" src="{{ theme_dir }}web/img/place-holder-image@2x.png" data-fred-name="image" data-fred-attrs="alt">
         <div class="text-center mb-3">
             <span data-fred-name="link" data-fred-rte="true" data-fred-rte-config="cta"><a class="btn btn-secondary mx-auto" href="#">Download</a></a>

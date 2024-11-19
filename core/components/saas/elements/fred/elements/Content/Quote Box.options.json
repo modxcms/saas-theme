@@ -25,7 +25,8 @@
     {
       "name": "background",
       "label": "Background",
-      "type": "image"
+      "type": "image",
+      "value": "{{theme_dir}}/web/img/blog-image-03@2x.jpg"
     },
     {
       "fred-import": "option-style"

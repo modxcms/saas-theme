@@ -8,9 +8,9 @@
             <div class="col-md-4">
                 <form action="[[~[[++saas.setting.blog_search_resource]]]]">
                     <div class="input-group">
-                        <input type="text" name="search" class="form-control" placeholder="Search Blog">
+                        <input type="text" name="search" class="form-control" placeholder="[[%saas.fe.blog_search? &topic=`fe` &namespace=`saas`]]">
                         <button class="btn btn-primary">
-                            <i class="fas fa-search"></i>
+                            <em class="fas fa-search"></em>
                         </button>
                     </div>
                 </form>
@@ -19,7 +19,7 @@
         </div>
         <hr>
         <div class="row">
-            <div class="col pr-md-5" data-fred-dropzone="content" style="min-height: 500px;">
+            <div class="col pr-md-5" data-fred-dropzone="content">
                 [[*content]]
             </div>
             <div class="col-md-4 pl-md-5">
@@ -30,7 +30,7 @@
 </div>
 <div class="py-5 bg-primary text-white">
     <div class="container">
-        <h1 class="text-center py-4">Popular Posts</h1>
+        <h1 class="text-center py-4">[[%saas.fe.blog_popular? &topic=`fe` &namespace=`saas`]]</h1>
         <div class="row py-4">
             [[getResources?
             &parents=`[[*parent]]`

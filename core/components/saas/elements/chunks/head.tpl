@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="[[++cultureKey]]">
 <head>
     [[SeoSuiteMeta]]
     <base href="[[!++site_url]]" />

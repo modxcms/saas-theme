@@ -16,6 +16,9 @@ return new class() {
 
     private function run(): void
     {
+        if (!in_array($this->action, ['install', 'upgrade', 0, 1])) {
+            return;
+        }
         $chunks = [
             'saas.custom.footer-scripts',
             'saas.custom.header-scripts',

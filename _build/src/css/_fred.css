@@ -1,0 +1,14 @@
+.fred--active {
+    *[data-fred-dropzone]:empty {
+        min-height: 100px;
+        background: rgba(0, 0, 0, 0.1);
+        position: relative;
+        &:before {
+            content: "Drop Here";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}

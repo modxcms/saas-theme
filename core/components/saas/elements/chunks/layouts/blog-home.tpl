@@ -8,9 +8,9 @@
             <div class="col-md-4">
                 <form action="[[~[[++saas.setting.blog_search_resource]]]]">
                     <div class="input-group">
-                        <input type="text" name="search" class="form-control" placeholder="Search Blog">
+                        <input type="text" name="search" class="form-control" placeholder="[[%saas.fe.blog_search? &topic=`fe` &namespace=`saas`]]">
                         <button class="btn btn-primary">
-                            <i class="fas fa-search"></i>
+                            <em class="fas fa-search"></em>
                         </button>
                     </div>
                 </form>
@@ -28,6 +28,7 @@
                 &prepareTVs=`1`
                 &includeTVs=`1`
                 &includeTVList=`saas_page_featured_image`
+                &includeContent=`1`
                 &tpl=`saas-blog-item`
                 &limit=`4`
                 ]]
@@ -35,7 +36,7 @@
                     [[!+page.nav]]
                 </nav>
             </div>
-            <div class="col-md-4 pl-md-5" data-fred-dropzone="saas_blog_sidebar" data-fred-target="saas_blog_sidebar" style="min-height: 500px;">
+            <div class="col-md-4 pl-md-5" data-fred-dropzone="saas_blog_sidebar" data-fred-target="saas_blog_sidebar">
                 [[*saas_blog_sidebar]]
             </div>
         </div>
@@ -43,7 +44,7 @@
 </div>
 <div class="py-5 bg-primary text-white">
     <div class="container">
-        <h1 class="text-center py-4">Popular Posts</h1>
+        <h1 class="text-center py-4">[[%saas.fe.blog_popular? &topic=`fe` &namespace=`saas`]]</h1>
         <div class="row py-4">
             [[getResources?
             &parents=`[[*id]]`
