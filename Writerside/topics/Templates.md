@@ -32,6 +32,7 @@ Template variables can be accessed on Fred Pages in the Settings -> TVs menu. Th
 ### saas_page_featured_image
 
 _Type:_ Image
+
 _Templates_: SaaS Main, SaaS Blog Post, SaaS Blog Home, SaaS Custom Landing
 
 The saas_page_featured_image template variable is used to set a featured image for a page. The featured image is displayed
@@ -40,6 +41,7 @@ in the OG image meta tag and in blog post listings.
 ### saas_page_featured
 
 _Type:_ Checkbox
+
 _Templates_: SaaS Blog Post
 
 The saas_page_featured template variable is used to mark a page as featured. Featured pages are displayed in the Featured
@@ -48,6 +50,7 @@ Blog Posts sidebar element.
 ### saas_blog_sidebar
 
 _Type:_ Fred Dropzone
+
 _Templates_: SaaS Blog Post, SaaS Blog Home
 
 The saas_blog_sidebar template variable is used to add Fred elements to the sidebar of the SaaS Blog Home and SaaS Blog Post.
