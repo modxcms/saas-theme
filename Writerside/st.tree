@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="st"
+                 name="SaaS Theme"
+                 start-page="start.md">
+
+    <toc-element topic="start.md"/>
+    <toc-element topic="Theme-Settings.md"/>
+    <toc-element topic="Elements.md"/>
+    <toc-element topic="Templates.md"/>
+</instance-profile>
