@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./_build/src",
+    "outDir": "./assets/components/saas/build",
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "module": "es6",
+    "target": "es5",
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    ".d.ts"
+  ]
+}

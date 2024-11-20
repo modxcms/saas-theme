@@ -1,0 +1,142 @@
+{
+  "theme": "inlite",
+  "inline": true,
+  "cleanup": false,
+  "verify_html": false,
+  "plugins": "modxlink contextmenu code",
+  "selection_toolbar": "bold italic | modxlink | code",
+  "valid_elements": "a[href|target|class],br,strong,em",
+  "link_class_list": [
+    {
+      "title": "None",
+      "value": ""
+    },
+    {
+      "title": "Filled Buttons",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "btn btn-primary"
+        },
+        {
+          "title": "Primary Large",
+          "value": "btn btn-primary btn-lg"
+        },
+        {
+          "title": "Secondary",
+          "value": "btn btn-secondary"
+        },
+        {
+          "title": "Secondary Large",
+          "value": "btn btn-secondary btn-lg"
+        },
+        {
+          "title": "Success",
+          "value": "btn btn-success"
+        },
+        {
+          "title": "Danger",
+          "value": "btn btn-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "btn btn-warning"
+        },
+        {
+          "title": "Info",
+          "value": "btn btn-info"
+        },
+        {
+          "title": "Light",
+          "value": "btn btn-light"
+        },
+        {
+          "title": "Dark",
+          "value": "btn btn-dark"
+        }
+      ]
+    },
+    {
+      "title": "Outline Buttons",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "btn btn-outline-primary"
+        },
+        {
+          "title": "Primary Large",
+          "value": "btn btn-outline-primary btn-lg"
+        },
+        {
+          "title": "Secondary",
+          "value": "btn btn-outline-secondary"
+        },
+        {
+          "title": "Secondary Large",
+          "value": "btn btn-outline-secondary btn-lg"
+        },
+        {
+          "title": "Success",
+          "value": "btn btn-outline-success"
+        },
+        {
+          "title": "Danger",
+          "value": "btn btn-outline-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "btn btn-outline-warning"
+        },
+        {
+          "title": "Info",
+          "value": "btn btn-outline-info"
+        },
+        {
+          "title": "Light",
+          "value": "btn btn-outline-light"
+        },
+        {
+          "title": "Dark",
+          "value": "btn btn-outline-dark"
+        }
+      ]
+    },
+    {
+      "title": "Colors",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "text-primary"
+        },
+        {
+          "title": "Secondary",
+          "value": "text-secondary"
+        },
+        {
+          "title": "Success",
+          "value": "text-success"
+        },
+        {
+          "title": "Danger",
+          "value": "text-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "text-warning"
+        },
+        {
+          "title": "Info",
+          "value": "text-info"
+        },
+        {
+          "title": "Light",
+          "value": "text-light"
+        },
+        {
+          "title": "Dark",
+          "value": "text-dark"
+        }
+      ]
+    }
+  ]
+}

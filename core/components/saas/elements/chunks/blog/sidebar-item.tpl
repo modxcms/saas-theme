@@ -1,0 +1,1 @@
+<p><a href="[[~[[+id]]]]" class="fw-bold">[[+pagetitle]]</a><br />[[+publishedon:strtotime:date=`%Y-%m-%d`]]</p>

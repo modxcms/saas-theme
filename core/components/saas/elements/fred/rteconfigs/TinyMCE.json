@@ -1,0 +1,425 @@
+{
+  "theme": "inlite",
+  "inline": true,
+  "cleanup": false,
+  "verify_html": false,
+  "plugins": "modxlink image imagetools media lists contextmenu code",
+  "insert_toolbar": "image media quicktable modxlink styleselect hr",
+  "selection_toolbar": "styleselect | bold italic underline | alignleft aligncenter alignright | bullist numlist | modxlink h2 h3 h4 blockquote hr | code | removeformat",
+  "image_advtab": true,
+  "imagetools_toolbar": "alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions",
+  "auto_focus": false,
+  "branding": false,
+  "relative_urls": false,
+  "image_dimensions": false,
+  "force_br_newlines": true,
+  "remove_linebreaks": false,
+  "image_class_list": [
+    {
+      "title": "None",
+      "value": ""
+    },
+    {
+      "title": "Responsive",
+      "value": "img-fluid"
+    },
+    {
+      "title": "Full Width",
+      "value": "img-fluid w-100"
+    }
+  ],
+  "link_class_list": [
+    {
+      "title": "None",
+      "value": ""
+    },
+    {
+      "title": "Filled Buttons",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "btn btn-primary"
+        },
+        {
+          "title": "Primary Large",
+          "value": "btn btn-primary btn-lg"
+        },
+        {
+          "title": "Secondary",
+          "value": "btn btn-secondary"
+        },
+        {
+          "title": "Secondary Large",
+          "value": "btn btn-secondary btn-lg"
+        },
+        {
+          "title": "Success",
+          "value": "btn btn-success"
+        },
+        {
+          "title": "Danger",
+          "value": "btn btn-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "btn btn-warning"
+        },
+        {
+          "title": "Info",
+          "value": "btn btn-info"
+        },
+        {
+          "title": "Light",
+          "value": "btn btn-light"
+        },
+        {
+          "title": "Dark",
+          "value": "btn btn-dark"
+        }
+      ]
+    },
+    {
+      "title": "Outline Buttons",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "btn btn-outline-primary"
+        },
+        {
+          "title": "Primary Large",
+          "value": "btn btn-outline-primary btn-lg"
+        },
+        {
+          "title": "Secondary",
+          "value": "btn btn-outline-secondary"
+        },
+        {
+          "title": "Secondary Large",
+          "value": "btn btn-outline-secondary btn-lg"
+        },
+        {
+          "title": "Success",
+          "value": "btn btn-outline-success"
+        },
+        {
+          "title": "Danger",
+          "value": "btn btn-outline-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "btn btn-outline-warning"
+        },
+        {
+          "title": "Info",
+          "value": "btn btn-outline-info"
+        },
+        {
+          "title": "Light",
+          "value": "btn btn-outline-light"
+        },
+        {
+          "title": "Dark",
+          "value": "btn btn-outline-dark"
+        }
+      ]
+    },
+    {
+      "title": "Colors",
+      "items": [
+        {
+          "title": "Primary",
+          "value": "text-primary"
+        },
+        {
+          "title": "Secondary",
+          "value": "text-secondary"
+        },
+        {
+          "title": "Success",
+          "value": "text-success"
+        },
+        {
+          "title": "Danger",
+          "value": "text-danger"
+        },
+        {
+          "title": "Warning",
+          "value": "text-warning"
+        },
+        {
+          "title": "Info",
+          "value": "text-info"
+        },
+        {
+          "title": "Light",
+          "value": "text-light"
+        },
+        {
+          "title": "Dark",
+          "value": "text-dark"
+        }
+      ]
+    }
+  ],
+  "formats": {
+    "alignleft": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-left"
+    },
+    "aligncenter": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-center"
+    },
+    "alignright": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-right"
+    },
+    "alignjustify": {
+      "selector": "p,h1,h2,h3,h4,h5,h6,td,th,div,ul,ol,li,table,img",
+      "classes": "text-justify"
+    },
+    "bold": {
+      "inline": "span",
+      "classes": "fw-bold"
+    },
+    "italic": {
+      "inline": "span",
+      "classes": "fst-italic"
+    },
+    "underline": {
+      "inline": "span",
+      "classes": "text-decoration-underline"
+    },
+    "strikethrough": {
+      "inline": "span",
+      "classes": "text-decoration-line-through"
+    }
+  },
+  "style_formats": [
+    {
+      "title": "Blocks",
+      "items": [
+        {
+          "title": "Half Width Rule",
+          "block": "hr",
+          "classes": "w-50 mx-auto",
+          "wrapper": false
+        }
+      ]
+    },
+    {
+      "title": "Colors",
+      "items": [
+        {
+          "title": "Primary",
+          "inline": "span",
+          "classes": "text-primary"
+        },
+        {
+          "title": "Secondary",
+          "inline": "span",
+          "classes": "text-secondary"
+        },
+        {
+          "title": "Success",
+          "inline": "span",
+          "classes": "text-success"
+        },
+        {
+          "title": "Danger",
+          "inline": "span",
+          "classes": "text-danger"
+        },
+        {
+          "title": "Warning",
+          "inline": "span",
+          "classes": "text-warning"
+        },
+        {
+          "title": "Info",
+          "inline": "span",
+          "classes": "text-info"
+        },
+        {
+          "title": "Light",
+          "inline": "span",
+          "classes": "text-light"
+        },
+        {
+          "title": "Dark",
+          "inline": "span",
+          "classes": "text-dark"
+        },
+        {
+          "title": "Muted",
+          "inline": "span",
+          "classes": "text-muted"
+        }
+      ]
+    },
+    {
+      "title": "Fonts",
+      "items": [
+        {
+          "title": "Sans Serif",
+          "inline": "span",
+          "classes": "font-sans"
+        },
+        {
+          "title": "Serif",
+          "inline": "span",
+          "classes": "font-serif"
+        },
+        {
+          "title": "Monospace",
+          "inline": "span",
+          "classes": "font-monospace"
+        }
+      ]
+    },
+    {
+      "title": "Text",
+      "items": [
+        {
+          "title": "Lead",
+          "block": "p",
+          "classes": "lead"
+        },
+        {
+          "title": "Size",
+          "items": [
+            {
+              "title": "Display 1",
+              "inline": "span",
+              "classes": "display-1"
+            },
+            {
+              "title": "Display 2",
+              "inline": "span",
+              "classes": "display-2"
+            },
+            {
+              "title": "Display 3",
+              "inline": "span",
+              "classes": "display-3"
+            },
+            {
+              "title": "Display 4",
+              "inline": "span",
+              "classes": "display-4"
+            },
+            {
+              "title": "Font Size 1",
+              "inline": "span",
+              "classes": "fs-1"
+            },
+            {
+              "title": "Font Size 2",
+              "inline": "span",
+              "classes": "fs-2"
+            },
+            {
+              "title": "Font Size 3",
+              "inline": "span",
+              "classes": "fs-3"
+            },
+            {
+              "title": "Font Size 4",
+              "inline": "span",
+              "classes": "fs-4"
+            },
+            {
+              "title": "Font Size 5",
+              "inline": "span",
+              "classes": "fs-5"
+            },
+            {
+              "title": "Font Size 6",
+              "inline": "span",
+              "classes": "fs-6"
+            }
+          ]
+        },
+        {
+          "title": "Weight",
+          "items": [
+            {
+              "title": "Light",
+              "inline": "span",
+              "classes": "fw-light"
+            },
+            {
+              "title": "Normal",
+              "inline": "span",
+              "classes": "fw-normal"
+            },
+            {
+              "title": "Medium",
+              "inline": "span",
+              "classes": "fw-medium"
+            },
+            {
+              "title": "Bold",
+              "inline": "span",
+              "classes": "fw-bold"
+            }
+          ]
+        },
+        {
+          "title": "Line Height",
+          "items": [
+            {
+              "title": "1",
+              "inline": "span",
+              "classes": "lh-1"
+            },
+            {
+              "title": "Small",
+              "inline": "span",
+              "classes": "lh-sm"
+            },
+            {
+              "title": "Base",
+              "inline": "span",
+              "classes": "lh-base"
+            },
+            {
+              "title": "Large",
+              "inline": "span",
+              "classes": "lh-lg"
+            }
+          ]
+        },
+        {
+          "title": "Formatting",
+          "items": [
+            {
+              "title": "Small",
+              "inline": "small"
+            },
+            {
+              "title": "Italic",
+              "inline": "span",
+              "classes": "fst-italic"
+            },
+            {
+              "title": "Uppercase",
+              "inline": "span",
+              "classes": "text-uppercase"
+            },
+            {
+              "title": "Lowercase",
+              "inline": "span",
+              "classes": "text-lowercase"
+            },
+            {
+              "title": "Capitalize",
+              "inline": "span",
+              "classes": "text-capitalize"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

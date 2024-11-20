@@ -1,0 +1,18 @@
+<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} position-relative">
+    {% if background %}
+        <img src="{{ background }}" class="position-absolute top-0 start-0 w-100 h-100 opacity-25 object-fit-cover" alt="Quote Box Background Image" />
+    {% endif %}
+
+    <div class="container position-relative">
+        <div class="row my-5">
+            <div class="col-md-6 col-sm-8 {{ position }}">
+                <em class="lead{% if oversize %} display-6{% endif %}" data-fred-name="quote"> "Unlike the customer
+                    testimonials on the home page, that highlight the benefits of the single feature, this testimonial
+                    should highlight the benefits of the service/product as a whole. It should be from the persons own
+                    experience and how the product has helped their business." </em>
+                {% if attr %}<p class="lead mt-5" data-fred-name="attr"><strong>Nancy Drew</strong> - Vice President
+                    Accounting </p>{% endif %}
+            </div>
+        </div>
+    </div>
+</div>

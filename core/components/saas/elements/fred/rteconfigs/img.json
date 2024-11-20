@@ -1,0 +1,12 @@
+{
+  "theme": "inlite",
+  "inline": true,
+  "cleanup": false,
+  "verify_html": false,
+  "plugins": "modxlink image imagetools contextmenu code",
+  "insert_toolbar": "image modxlink",
+  "selection_toolbar": "image | bold italic | modxlink | code",
+  "valid_elements": "a[href|target|class],br,strong,em,span,img[src|alt|title|class|data-embed|data-embed-raw]",
+  "image_advtab": true,
+  "imagetools_toolbar": "alignleft aligncenter alignright | rotateleft rotateright | flipv fliph | editimage imageoptions"
+}

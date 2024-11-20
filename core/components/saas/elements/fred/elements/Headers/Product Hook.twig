@@ -1,0 +1,16 @@
+<div class="{{ padding }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 text-md-left text-center my-md-5 py-md-5">
+                <h1 class="{{ textcolor }}" data-fred-name="title">Product Hook</h1>
+                <p class="lead {{ textcolor }}" data-fred-name="text"> Product promise. This is your opportunity to entice your customer to purchase the product or sign up for your services. Most important thing is to keep is short, simple, and to the point. </p>
+                {%if link %}
+                    <span data-fred-name="link" data-fred-rte="true" data-fred-rte-config="cta"><a class="btn navbar-btn px-4" href="#">Call to action</a></span>
+                {%endif%}
+            </div>
+            <div class="col-md-7 align-self-center">
+                <img class="img-fluid mt-5" src="{{ theme_dir }}web/img/admin-dash-computer@2x.png" data-fred-name="image" alt="Alt Title" data-fred-attrs="alt">
+            </div>
+        </div>
+    </div>
+</div>

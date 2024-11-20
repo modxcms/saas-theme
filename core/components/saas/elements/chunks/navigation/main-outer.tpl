@@ -1,0 +1,11 @@
+<ul class="navbar-nav">
+    [[+wf.wrapper]]
+    [[++saas.setting.cta_link:ne=``:then=`
+        <li class="nav-item d-none d-md-inline-block">
+            <a class="btn btn-primary navbar-btn ml-2 px-4 mx-2 text-white" href="[[~[[++saas.setting.cta_link]]]]">[[++saas.setting.cta_button]]</a>
+        </li>
+        <li class="nav-item d-md-none">
+            <a class="nav-link" href="[[~[[++saas.setting.cta_link]]]]">[[++saas.setting.cta_button]]</a>
+        </li>
+    `]]
+</ul>

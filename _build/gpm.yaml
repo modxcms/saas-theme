@@ -1,0 +1,313 @@
+name: SaaS
+lowCaseName: saas
+version: 0.0.14
+description: 'Software as a Service (SaaS) application theme.'
+author: matdave
+namespace: SaaS
+categories:
+    -
+        name: Fred
+    -
+        name: Blog
+    -
+        name: Forms
+    -
+        name: Navigation
+    -
+        name: Header
+    -
+        name: Footer
+    -
+        name: Layouts
+templates:
+    -
+        name: 'SaaS Blog Post'
+        category: Fred
+        file: fred/blog-post.html
+    -
+        name: 'SaaS Blog Home'
+        category: Fred
+        file: fred/blog-home.html
+    -
+        name: 'SaaS Main'
+        category: Fred
+        file: fred/main.html
+    -
+        name: 'SaaS Custom Landing'
+        file: landing.html
+chunks:
+    -
+        name: saas-footer
+        file: footer.tpl
+        category: Footer
+    -
+        name: saas-navigation
+        file: navigation.tpl
+        category: Header
+    -
+        name: saas-head
+        file: head.tpl
+    -
+        name: saas_blog_featured-item
+        category: Blog
+        file: blog/featured-item.tpl
+    -
+        name: saas-blog-item
+        category: Blog
+        file: blog/item.tpl
+    -
+        name: saas_blog_sidebar-item
+        category: Blog
+        file: blog/sidebar-item.tpl
+    -
+        name: saas-form-beacon
+        category: Forms
+        file: forms/beacon.tpl
+    -
+        name: saas-form-demo
+        category: Forms
+        file: forms/demo.tpl
+    -
+        name: saas-nav-footer-inner
+        category: Navigation
+        file: navigation/footer-inner.tpl
+    -
+        name: saas-nav-footer-outer
+        category: Navigation
+        file: navigation/footer-outer.tpl
+    -
+        name: saas-nav-footer-row
+        category: Navigation
+        file: navigation/footer-row.tpl
+    -
+        name: saas-nav-footer-row-container
+        category: Navigation
+        file: navigation/footer-row-container.tpl
+    -
+        name: saas-nav-footer-row-inner
+        category: Navigation
+        file: navigation/footer-row-inner.tpl
+    -
+        name: saas-nav-main-inner
+        category: Navigation
+        file: navigation/main-inner.tpl
+    -
+        name: saas-nav-main-outer
+        category: Navigation
+        file: navigation/main-outer.tpl
+    -
+        name: saas-nav-main-row
+        category: Navigation
+        file: navigation/main-row.tpl
+    -
+        name: saas-blog-home-layout
+        category: Layouts
+        file: layouts/blog-home.tpl
+    -
+        name: saas-blog-post-layout
+        category: Layouts
+        file: layouts/blog-post.tpl
+plugins:
+    -
+        name: saasLexicon
+        file: saasLexicon.php
+        events:
+            - FredBeforeRender
+snippets:
+    -
+        name: saasToRGB
+        file: saasToRGB.php
+    -
+        name: saasDarken
+        file: saasDarken.php
+tvs:
+    -
+        name: saas_blog_featured
+        category: Blog
+        type: checkbox
+        caption: Featured
+        content: ''
+        inputOptionValues: Yes==1
+        templates:
+            - 'SaaS Blog Post'
+        properties:
+            -
+                name: fred
+                value: '1'
+                type: combo-boolean
+            -
+                name: fred.type
+                value: toggle
+    -
+        name: saas_page_featured_image
+        type: image
+        caption: Image
+        content: ''
+        templates:
+            - 'SaaS Blog Post'
+            - 'SaaS Blog Home'
+            - 'SaaS Main'
+            - 'SaaS Custom Landing'
+        properties:
+            -
+                name: fred
+                value: '1'
+                type: combo-boolean
+            -
+                name: fred.type
+                value: image
+    -
+        name: saas_blog_sidebar
+        category: Blog
+        type: freddropzone
+        caption: Sidebar
+        content: '@INHERIT'
+        templates:
+            - 'SaaS Blog Post'
+            - 'SaaS Blog Home'
+systemSettings:
+    -
+        key: theme_dir.custom_path
+        value: '{{pkg_assets_path}}/'
+    -
+        key: theme_dir.custom_url
+        value: '{{pkg_assets_url}}/'
+    -
+        key: lit
+        value: '0'
+build:
+    scriptsAfter:
+        - lit.gpm.php
+        - seosuite.gpm.php
+        - chunks.gpm.php
+        - defaultelement.after.gpm.php
+        - tinymce.after.gpm.php
+        - propertyset.gpm.php
+    scriptsBefore:
+        - defaultelement.before.gpm.php
+        - tinymce.before.gpm.php
+    requires:
+        'seo suite': '>3.0.0'
+        fred: '>3.1.0'
+        wayfinder: '>2.0.0'
+        getpage: '>1.0.0'
+        getresources: '>1.0.0'
+        collections: '>4.0.0'
+fred:
+    templates:
+        -
+            name: 'SaaS Blog Post'
+        -
+            name: 'SaaS Blog Home'
+        -
+            name: 'SaaS Main'
+    elementCategories:
+        -
+            name: Headers
+            templates:
+                - 'SaaS Main'
+            uuid: 6fd8ac67-e506-471d-8d54-9d5d51e19ca5
+        -
+            name: Content
+            uuid: 87bed3b7-ba73-4bac-86d9-9d5f4664398d
+        -
+            name: Sidebar
+            templates:
+                - 'SaaS Blog Home'
+            uuid: 2638aaf1-ab8d-4fa4-ad3c-9d5d51e19ed3
+    elements:
+        -
+            name: Anchor
+            category: Content
+            image: '{{theme_dir}}generated/anchor.png'
+            uuid: 3e05b002-50cf-45f3-861c-9d78e713c855
+        -
+            name: Benefits
+            category: Content
+            image: '{{theme_dir}}generated/benefits.png'
+            uuid: 999aa74d-6e53-4f88-acb6-9d5f445fdfc6
+        -
+            name: Contact
+            category: Content
+            image: '{{theme_dir}}generated/contact.png'
+            uuid: a0ffe346-57fd-4294-b511-9d5f445fe3aa
+        -
+            name: Customers
+            category: Content
+            image: '{{theme_dir}}generated/customers.png'
+            uuid: 22dd6046-b29c-49b2-b1ce-9d5f445fe48c
+        -
+            name: 'Font Awesome Grid'
+            category: Content
+            image: '{{theme_dir}}generated/fa_grid.png'
+            uuid: 59754b6b-d47b-43be-ae3e-9d5f445fe54b
+        -
+            name: 'Horizontal Rule'
+            category: Content
+            image: '{{theme_dir}}generated/hr.png'
+            uuid: 99b15f2a-6f9b-4e8c-a82f-9d5f445fe5f3
+        -
+            name: 'Large Image'
+            category: Content
+            image: '{{theme_dir}}generated/large_image.png'
+            uuid: 4c067832-f0b5-4cfe-8427-9d5f445fe6a5
+        -
+            name: 'Pricing Columns'
+            category: Content
+            image: '{{theme_dir}}generated/pricing_columns.png'
+            uuid: 3d518413-c63c-4db2-a9ea-9d5f445fe741
+        -
+            name: 'Quote Box'
+            category: Content
+            image: '{{theme_dir}}generated/quote_box.png'
+            uuid: 54a4736e-6b0f-4d80-aa43-9d5f445fe7dc
+        -
+            name: 'Read More'
+            category: Content
+            image: '{{theme_dir}}generated/read_more.png'
+            uuid: e5fe32c7-f0fc-4d7a-a539-9d5f445fe89a
+        -
+            name: 'Rich Text Columns'
+            category: Content
+            image: '{{theme_dir}}generated/rich_text_columns.png'
+            uuid: d4817e56-488c-4445-b9e1-9d5f445fe957
+        -
+            name: 'Interior Header'
+            category: Headers
+            image: '{{theme_dir}}generated/interior_header.png'
+            uuid: 7ee2410b-d781-45ae-8e25-9d5f48ae92f0
+        -
+            name: 'Product Hook'
+            category: Headers
+            image: '{{theme_dir}}generated/product_hook.png'
+            uuid: d2605193-607f-4f8d-aa02-9d5f48ae96a8
+        -
+            name: 'Action Block'
+            category: Sidebar
+            image: '{{theme_dir}}generated/action_block.png'
+            uuid: 0ea5895d-2454-4f38-b5c2-9d5f48ae976d
+        -
+            name: 'Recent Articles'
+            category: Sidebar
+            image: '{{theme_dir}}generated/recent_articles.png'
+            uuid: 5148fc47-3315-487a-bee5-9d5f48ae981e
+    rteConfigs:
+        -
+            name: TinyMCE
+            description: ''
+        -
+            name: cta
+            description: ''
+        -
+            name: list
+            description: ''
+        -
+            name: img
+            description: ''
+    optionSets:
+        -
+            name: option-style
+            description: ''
+            complete: false
+    theme:
+        uuid: 6cd24798-f105-4372-934c-9d5d51e190a9

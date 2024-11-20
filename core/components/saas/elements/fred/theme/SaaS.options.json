@@ -1,0 +1,334 @@
+[
+  {
+    "group": "saas.group.company",
+    "settings": [
+      {
+        "name": "site_name",
+        "label": "setting_saas.setting.site_name",
+        "global": false,
+        "value": "SaaS Theme"
+      },
+      {
+        "name": "contact_email",
+        "label": "setting_saas.setting.contact_email",
+        "global": false,
+        "value": "help@modx.com"
+      },
+      {
+        "name": "contact_phone",
+        "label": "setting_saas.setting.contact_phone",
+        "global": false,
+        "value": "+1 (469) 777-6639"
+      },
+      {
+        "name": "contact_phone_ext",
+        "label": "Contact Phone Extension",
+        "global": false
+      },
+      {
+        "name": "contact_address",
+        "label": "setting_saas.setting.contact_phone_ext",
+        "type": "textarea",
+        "global": false,
+        "value": "25 Highland Pk Vlg, Ste 100-413, \nDallas, TX 75205-2789, US"
+      }
+    ]
+  },
+  {
+    "group": "saas.group.cta",
+    "settings": [
+      {
+          "name": "cta_button",
+          "label": "setting_saas.setting.cta_button",
+          "global": false,
+          "value": "Request a Demo"
+      },
+      {
+          "name": "cta_link",
+          "label": "setting_saas.setting.cta_link",
+          "type": "page",
+          "global": false
+      },
+      {
+         "name": "border_radius",
+         "label": "setting_saas.setting.border_radius",
+         "type": "select",
+         "options": {
+           "0.0rem": "setting_saas.setting.border_radius.square",
+           "0.25rem": "setting_saas.setting.border_radius.slightly_rounded",
+           "0.375rem": "setting_saas.setting.border_radius.default",
+           "0.5rem": "setting_saas.setting.border_radius.rounded",
+           "1rem": "setting_saas.setting.border_radius.very_rounded",
+           "2rem": "setting_saas.setting.border_radius.extremely_rounded",
+           "50rem": "setting_saas.setting.border_radius.pill"
+         },
+        "global": false,
+        "value": "0.375rem"
+      }
+    ]
+  },
+  {
+    "group": "saas.group.blog",
+    "settings": [
+      {
+        "name": "blog_show",
+        "label": "setting_saas.setting.blog_show",
+        "type": "slider",
+        "min": 1,
+        "max": 10,
+        "step": 1,
+        "value": 3,
+        "global": false
+      },
+      {
+        "name": "blog_resource",
+        "label": "setting_saas.setting.blog_resource",
+        "type": "page",
+        "global": false
+      },
+      {
+        "name": "blog_search_resource",
+        "label": "setting_saas.setting.blog_search_resource",
+        "type": "page",
+        "global": false
+      },
+      {
+        "name": "blog_home_layout",
+        "label": "setting_saas.setting.blog_home_layout",
+        "type": "chunk",
+        "category": "Layouts",
+        "global": false,
+        "value": "saas-blog-home-layout"
+      },
+      {
+        "name": "blog_post_layout",
+        "label": "setting_saas.setting.blog_post_layout",
+        "type": "chunk",
+        "category": "Layouts",
+        "global": false,
+        "value": "saas-blog-post-layout"
+      }
+    ]
+  },
+  {
+    "group": "saas.group.logo",
+    "settings": [
+      {
+        "name": "logo_light",
+        "label": "setting_saas.setting.logo_light",
+        "type": "image",
+        "global": false
+      },
+      {
+        "name": "logo_dark",
+        "label": "setting_saas.setting.logo_dark",
+        "type": "image",
+        "global": false
+      },
+      {
+        "name": "logo_width",
+        "label": "setting_saas.setting.logo_width",
+        "global": false
+      },
+      {
+        "name": "logo_height",
+        "label": "setting_saas.setting.logo_height",
+        "global": false
+      },
+      {
+        "name": "show_company",
+        "label": "setting_saas.setting.show_company",
+        "type": "toggle",
+        "value": true,
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "saas.group.social",
+    "settings": [
+      {
+        "name": "social_fa",
+        "label": "setting_saas.setting.social_fa",
+        "global": false,
+        "value": "https://facebook.com/modxcms"
+      },
+      {
+        "name": "social_tw",
+        "label": "setting_saas.setting.social_tw",
+        "global": false,
+        "value": "https://twitter.com/modx"
+      },
+      {
+        "name": "social_li",
+        "label": "setting_saas.setting.social_li",
+        "global": false,
+        "value": "https://www.linkedin.com/company/modx/"
+      },
+      {
+        "name": "social_in",
+        "label": "setting_saas.setting.social_in",
+        "global": false
+      },
+      {
+        "name": "social_yt",
+        "label": "setting_saas.setting.social_yt",
+        "global": false,
+        "value": "https://www.youtube.com/modx"
+      }
+    ]
+  },
+  {
+    "group": "saas.group.colors",
+    "settings": [
+      {
+        "name": "color_primary",
+        "label": "setting_saas.setting.primary_color",
+        "type": "colorpicker",
+        "value": "#265782",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_secondary",
+        "label": "setting_saas.setting.secondary_color",
+        "type": "colorpicker",
+        "value": "#868e96",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_success",
+        "label": "setting_saas.setting.success_color",
+        "type": "colorpicker",
+        "value": "#28a745",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_info",
+        "label": "setting_saas.setting.info_color",
+        "type": "colorpicker",
+        "value": "#17a2b8",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_warning",
+        "label": "setting_saas.setting.warning_color",
+        "type": "colorpicker",
+        "value": "#ffc107",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_danger",
+        "label": "setting_saas.setting.danger_color",
+        "type": "colorpicker",
+        "value": "#dc3545",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_light",
+        "label": "setting_saas.setting.light_color",
+        "type": "colorpicker",
+        "value": "#f7f8fb",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_dark",
+        "label": "setting_saas.setting.dark_color",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_body_bg",
+        "label": "setting_saas.setting.color_body_bg",
+        "type": "colorpicker",
+        "value": "#ffffff",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_body_text",
+        "label": "setting_saas.setting.color_body_text",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_heading",
+        "label": "setting_saas.setting.color_heading",
+        "type": "colorpicker",
+        "value": "#2f3b49",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_link",
+        "label": "setting_saas.setting.color_link",
+        "type": "colorpicker",
+        "value": "#0d6efd",
+        "showAlpha": false,
+        "global": false
+      },
+      {
+        "name": "color_link_hover",
+        "label": "setting_saas.setting.color_link_hover",
+        "type": "colorpicker",
+        "value": "#0a58ca",
+        "showAlpha": false,
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "saas.group.fonts",
+    "settings": [
+      {
+        "name": "font_sans",
+        "label": "setting_saas.setting.font_sans",
+        "value": "system-ui,-apple-system,\"Segoe UI\",Roboto,\"Helvetica Neue\",\"Noto Sans\",\"Liberation Sans\",Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\"",
+        "global": false
+      },
+      {
+        "name": "font_serif",
+        "label": "setting_saas.setting.font_serif",
+        "value": "Georgia,Times,\"Times New Roman\",serif",
+        "global": false
+      },
+      {
+        "name": "font_mono",
+        "label": "setting_saas.setting.font_mono",
+        "value": "SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace",
+        "global": false
+      }
+    ]
+  },
+  {
+    "group": "saas.group.layout",
+    "settings": [
+      {
+        "name": "header",
+        "label": "setting_saas.setting.header",
+        "type": "chunk",
+        "category": "Header",
+        "global": false,
+        "value": "saas-navigation"
+      },
+      {
+        "name": "footer",
+        "label": "setting_saas.setting.footer",
+        "type": "chunk",
+        "category": "Footer",
+        "global": false,
+        "value": "saas-footer"
+      }
+    ]
+  }
+]

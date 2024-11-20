@@ -1,0 +1,25 @@
+{
+  "settings": [
+    {
+      "name": "right",
+      "type": "toggle",
+      "label": "Copy on Right",
+      "value": false
+    },
+    {
+      "name": "list",
+      "type": "toggle",
+      "label": "Show List",
+      "value": false
+    },
+    {
+      "name": "quote",
+      "type": "toggle",
+      "label": "Show Quote",
+      "value": true
+    },
+    {
+      "fred-import": "option-style"
+    }
+  ]
+}

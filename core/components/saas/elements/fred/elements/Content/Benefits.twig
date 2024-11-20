@@ -1,0 +1,37 @@
+<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
+    <div class="container">
+        <div class="row my-md-5">
+            <div class="col-md-6 {{ right ? 'ps-md-5 order-md-2' : 'pe-md-5' }}">
+                <h3 class="{{ textcolor }} mt-lg-4" data-fred-name="title">Benefit</h3>
+                <p class="lead mt-4" data-fred-name="lead"> Use this space to highlight 1 of the top 3 most important
+                    features/services, to engage your target customer. Keep it simple, you can highlight attributes and
+                    benefits on the features page. </p>
+                {% if list %}
+                    <ul class="lead {{ textcolor }} ps-0 align-bullets mt-4 {% if quote %}pb-4{% endif %}"
+                        data-fred-name="list" data-fred-rte="true" data-fred-rte-config="list">
+                        <li>Selling points about the feature</li>
+                        <li>Selling points about the feature</li>
+                        <li>Selling points about the feature</li>
+                    </ul>
+                {% endif %}
+                {% if quote %}
+                    <div class="d-flex flex-row align-items-top mt-4">
+                        <img class="rounded-circle bg-light mb-4" width="72" height="72"
+                             src="{{ theme_dir }}web/img/testimonial-image@2x.jpg" data-fred-name="image"
+                             data-fred-attrs="alt">
+                        <div class="d-flex flex-column ms-4">
+                            <p data-fred-name="quote"> “Use the customer testimonial to highlight
+                                the benefits of the feature being called out. This should describe how the feature has
+                                improved their business, sales, operations, etc.” </p>
+                            <p data-fred-name="attr"><b>John Smith</b> - Ginormicom, Inc.</p>
+                        </div>
+                    </div>
+                {% endif %}
+            </div>
+            <div class="col-md-6 mt-4">
+                <img class="img-fluid" src="{{ theme_dir }}web/img/place-holder-image@2x.png"
+                     data-fred-name="quote image" data-fred-attrs="alt">
+            </div>
+        </div>
+    </div>
+</div>

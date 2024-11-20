@@ -1,0 +1,16 @@
+{% set colClass = (columns ? 12 / columns : 12)|round %}
+<div class="{{ padding }} {{ bgcolor }} {{ textcolor }} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
+    <div class="container">
+        {% if heading != "none" %}
+            <h2 class="py-4 {{ heading }} {{ textcolor }}" data-fred-name="title">More Features</h2>
+        {% endif %}
+        <div class="row lead justify-content-evenly">
+            {% for c in 0..(columns - 1) %}
+                <div class="{% if columns > 3 %}col-lg-{{ colClass }} col-sm-6{% else %}col-md-{{ colClass }}{% endif %}"
+                     data-fred-name="text-{{ c }}" data-fred-rte="true">
+                    <p>Enter some text about your product here.</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "settings": [
+    {
+      "type": "select",
+      "name": "heading",
+      "label": "Heading Position",
+      "options": {
+        "none": "Hidden",
+        "text-start": "Left",
+        "text-center": "Center",
+        "text-end": "Right"
+      },
+      "value": "text-start"
+    },
+    {
+      "name": "columns",
+      "label": "Columns of Text",
+      "type": "slider",
+      "value": 1,
+      "min": 1,
+      "max": 6
+    },
+    {
+      "fred-import": "option-style"
+    }
+  ]
+}

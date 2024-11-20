@@ -1,0 +1,17 @@
+<div class="row {{ padding | replace({"p":"m"}) }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %} p-3">
+    <div class="col">
+        <h4 class="fw-bold my-4 {{ textcolor }}">[[%saas.fe.blog_recent? &topic=`fe` &namespace=`saas`]]</h4>
+        <div class="mt-md-3 {{ textcolor }}">
+            [[getResources?
+                &parents=`[[++saas.setting.blog_resource]]`
+                &tpl=`saas_blog_sidebar-item`
+                &prepareTVs=`1`
+                &includeTVs=`1`
+                &includeTVList=`saas_page_featured_image`
+                &limit=`5`
+                &sortby=`publishedon`
+                &sortdir=`DESC`
+            ]]
+        </div>
+    </div>
+</div>

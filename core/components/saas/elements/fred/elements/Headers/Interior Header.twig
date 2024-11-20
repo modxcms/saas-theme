@@ -1,0 +1,9 @@
+<div class="{{ padding }} {{bgcolor}} {{ border }}{% if border_top %} border-top{% endif %}{% if border_bottom %} border-bottom{% endif %}{% if border_size > 0 %} border-{{ border_size }}{% endif %}">
+    <div class="container">
+        <h1 class="text-center {{ textcolor }} pt-4" data-fred-name="title">Benefits and Features</h1>
+        <h5 class="text-center {{ textcolor }}" data-fred-name="content">A great cta is persuasive, creates a sense of urgency, and is action oriented</h5>
+        {%if link %}<div class="text-center">
+            <span data-fred-name="link" data-fred-rte="true" data-fred-rte-config="cta"><a class="btn btn-secondary mt-5" href="#">Ready to purchase</a></span>
+        </div>{%endif%}
+    </div>
+</div>

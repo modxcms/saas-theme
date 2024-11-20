@@ -1,0 +1,22 @@
+{
+  "name": "modxcms/saas",
+  "autoload": {
+    "psr-4": {
+      "SaaS\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "matdave",
+      "email": "mat@matdave.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "matdave/modxpackage": "dev-main"
+  },
+  "require-dev": {
+    "modx/revolution": "^3.0"
+  }
+}
