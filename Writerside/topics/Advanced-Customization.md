@@ -4,10 +4,10 @@ Obviously, the SaaS theme isn't going to be a perfect fit for every project. Tha
 the theme to fit your needs. This guide will walk you through some of the more advanced customization options available 
 in the SaaS theme.
 
-## Warning
-
+<warning>
 Do not make changes to the Elements that ship with the SaaS theme. Instead, create new Elements or duplicate existing
 Elements and make changes to the duplicates. This will ensure that you can update the theme without losing your changes.
+</warning>
 
 ## Custom Styles and Scripts
 
@@ -34,3 +34,12 @@ for either the Home or Article layout.
 The SaaS theme includes a custom TinyMCE configuration that can be customized to fit your needs. To edit the TinyMCE
 configuration, navigate to the "Fred" -> "RTE Configs" menu in the MODX Manager. Select the "TinyMCE" configuration
 assigned to the SaaS theme and make your changes. These changes will persist between updates to the SaaS theme.
+
+<seealso>
+       <category ref="related">
+           <a href="Theme-Settings.md">Theme Settings</a>
+       </category>
+       <category ref="external">
+           <a href="https://www.tiny.cloud/docs/tinymce/latest/plugins/#open-source-plugins">Tiny MCE Configuration</a>
+       </category>
+</seealso>

@@ -22,8 +22,9 @@ following theme settings:
 - **Blog Article Count**: The number of articles to display on the blog page.
 - **Blog Page**: The page that contains the blog articles.
 - **Blog Search Results Page**: (Optional) The page that displays search results from the blog.
-- **Blog Home Layout**: The layout of the blog home page.
-- **Blog Article Layout**: The layout of the blog article page.
+- **Blog Home Layout**: The layout of the blog home page. [<sup>1</sup>](#ref)
+- **Blog Article Layout**: The layout of the blog article page. [<sup>1</sup>](#ref)
+
 
 ## Logo
 
@@ -65,5 +66,14 @@ following theme settings:
 
 ## Layout
 
-- **Header Chunk**: The chunk that contains the header.
-- **Footer Chunk**: The chunk that contains the footer.
+- **Header Chunk**: The chunk that contains the header. [<sup>2</sup>](#ref)
+- **Footer Chunk**: The chunk that contains the footer. [<sup>2</sup>](#ref)
+
+{id="ref"}
+
+<seealso>
+       <category ref="related">
+           <a href="Advanced-Customization.md#customizing-the-blog"><sup>1</sup> Blog Customization</a>
+           <a href="Advanced-Customization.md#customizing-header-or-footer"><sup>2</sup> Header and Footer Customization</a>
+       </category>
+</seealso>
