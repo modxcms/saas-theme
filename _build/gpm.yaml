@@ -189,6 +189,8 @@ build:
     requires:
         'seo suite': '>3.0.0'
         fred: '>3.1.0'
+        'fred tinymce rte': '>1.2.0'
+        'fred font awesome icon editor': '>1.2.0'
         wayfinder: '>2.0.0'
         getpage: '>1.0.0'
         getresources: '>1.0.0'
