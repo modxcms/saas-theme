@@ -1,6 +1,6 @@
 name: SaaS
 lowCaseName: saas
-version: 1.0.0-beta
+version: 1.0.0-beta2
 description: 'Software as a Service (SaaS) application theme.'
 author: matdave
 namespace: SaaS

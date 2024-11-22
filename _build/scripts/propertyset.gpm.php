@@ -82,7 +82,7 @@ return new class() {
                 'value' => '<li class="page-item"><a class="page-link" href="[[+href]]">[[+pageNo]]</a></li>',
             ]
         ];
-        $propertySet->setProperties('properties', $properties);
+        $propertySet->setProperties($properties);
         $propertySet->save();
         $snippet = $this->modx->getObject(\MODX\Revolution\modSnippet::class, ['name' => 'getPage']);
         if (empty($snippet)) {
