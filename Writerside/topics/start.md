@@ -6,3 +6,16 @@ to the public!
 The SaaS theme is a modern, responsive theme for MODX Revolution. It is designed to be a starting point for building a
 Software as a Service (SaaS) website. The theme is built using the Bootstrap 5 framework and includes a number of
 customizable options.
+
+## Install Requirements
+
+This package requires the following MODX extras to be installed:
+
+- Collections
+- Fred
+- Fred TinyMCE RTE
+- Fred Font Awesome Icon Editor
+- getPage
+- getResources
+- SEO Suite
+- Wayfinder

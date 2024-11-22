@@ -1,6 +1,6 @@
 name: SaaS
 lowCaseName: saas
-version: 0.0.14
+version: 1.0.0-beta
 description: 'Software as a Service (SaaS) application theme.'
 author: matdave
 namespace: SaaS
@@ -187,14 +187,14 @@ build:
         - defaultelement.before.gpm.php
         - tinymce.before.gpm.php
     requires:
-        'seo suite': '>3.0.0'
-        fred: '>3.1.0'
-        'fred tinymce rte': '>1.2.0'
-        'fred font awesome icon editor': '>1.2.0'
-        wayfinder: '>2.0.0'
-        getpage: '>1.0.0'
-        getresources: '>1.0.0'
-        collections: '>4.0.0'
+        'SEO Suite': '>=3.1.0'
+        Fred: '>=3.1.0'
+        'Fred TinyMCE RTE': '>=1.2.0'
+        'Fred Font Awesome Icon Editor': '>=1.2.0'
+        Wayfinder: '>2.0.0'
+        getPage: '>1.0.0'
+        getResources: '>1.0.0'
+        Collections: '>=4.0.0'
 fred:
     templates:
         -
