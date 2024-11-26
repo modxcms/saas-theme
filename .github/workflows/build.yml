@@ -43,5 +43,5 @@ jobs:
             npm install
             npm run build
             rm -rf _packages
-            /www/pkgs/gpm/cli/bin/gpm package:update --pkg saas --updateDB=alter
-            /www/pkgs/gpm/cli/bin/gpm package:build --pkg saas
+            /www/pkgs/gpm/bin/gpm package:update --pkg saas --updateDB=alter
+            /www/pkgs/gpm/bin/gpm package:build --pkg saas
