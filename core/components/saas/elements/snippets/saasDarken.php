@@ -8,6 +8,16 @@
  * @return string
  **/
 
+if (!function_exists('dec2hex')) {
+    function dec2hex($int) {
+        $hex = dechex($int);
+        if (strlen($hex)%2 != 0) {
+            $hex = str_pad($hex, strlen($hex) + 1, '0', STR_PAD_LEFT);
+        }
+        return $hex;
+    }
+}
+
 $input = str_replace("#", "", $input);
 $r = hexdec(substr($input, 0, 2));
 $g = hexdec(substr($input, 2, 2));
@@ -30,8 +40,8 @@ $r = ($r < 0) ? 0 : (($r > 255) ? 255 : $r);
 $g = ($g < 0) ? 0 : (($g > 255) ? 255 : $g);
 $b = ($b < 0) ? 0 : (($b > 255) ? 255 : $b);
 
-$r = dechex($r);
-$g = dechex($g);
-$b = dechex($b);
+$r = dec2hex($r);
+$g = dec2hex($g);
+$b = dec2hex($b);
 
 return "#" . $r . $g . $b;
