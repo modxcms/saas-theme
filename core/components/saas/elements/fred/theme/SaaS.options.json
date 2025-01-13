@@ -183,7 +183,7 @@
     "settings": [
       {
         "name": "color_primary",
-        "label": "setting_saas.setting.primary_color",
+        "label": "setting_saas.setting.color_primary",
         "type": "colorpicker",
         "value": "#265782",
         "showAlpha": false,
@@ -191,7 +191,7 @@
       },
       {
         "name": "color_secondary",
-        "label": "setting_saas.setting.secondary_color",
+        "label": "setting_saas.setting.color_secondary",
         "type": "colorpicker",
         "value": "#868e96",
         "showAlpha": false,
@@ -199,7 +199,7 @@
       },
       {
         "name": "color_success",
-        "label": "setting_saas.setting.success_color",
+        "label": "setting_saas.setting.color_success",
         "type": "colorpicker",
         "value": "#28a745",
         "showAlpha": false,
@@ -207,7 +207,7 @@
       },
       {
         "name": "color_info",
-        "label": "setting_saas.setting.info_color",
+        "label": "setting_saas.setting.color_info",
         "type": "colorpicker",
         "value": "#17a2b8",
         "showAlpha": false,
@@ -215,7 +215,7 @@
       },
       {
         "name": "color_warning",
-        "label": "setting_saas.setting.warning_color",
+        "label": "setting_saas.setting.color_warning",
         "type": "colorpicker",
         "value": "#ffc107",
         "showAlpha": false,
@@ -223,7 +223,7 @@
       },
       {
         "name": "color_danger",
-        "label": "setting_saas.setting.danger_color",
+        "label": "setting_saas.setting.color_danger",
         "type": "colorpicker",
         "value": "#dc3545",
         "showAlpha": false,
@@ -231,7 +231,7 @@
       },
       {
         "name": "color_light",
-        "label": "setting_saas.setting.light_color",
+        "label": "setting_saas.setting.color_light",
         "type": "colorpicker",
         "value": "#f7f8fb",
         "showAlpha": false,
@@ -239,7 +239,7 @@
       },
       {
         "name": "color_dark",
-        "label": "setting_saas.setting.dark_color",
+        "label": "setting_saas.setting.color_dark",
         "type": "colorpicker",
         "value": "#2f3b49",
         "showAlpha": false,
